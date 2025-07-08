@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>『九大英文学』バックナンバー | 九州大学文学部 英語学・英文学研究室</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* カスタムスタイル */
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', 'Noto Sans JP', serif;
+        }
+        
+        .article-grid {
+            display: grid;
+            grid-template-columns: 150px 1fr; /* Author column width fixed */
+            gap: 0.5rem 1rem;
+        }
+        @media (max-width: 640px) {
+            .article-grid {
+                grid-template-columns: 1fr; /* Stack on small screens */
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700">
+
+    <!-- ヘッダー -->
+    <header id="header" class="bg-white/80 backdrop-blur-sm shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-wider">
+                <a href="index.html">ENGLISH | KYUSHU UNIV.</a>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#fields" class="nav-link">Fields</a>
+                <a href="index.html#essays" class="nav-link">Essays</a>
+                <a href="index.html#kyuei-kai" class="nav-link">Kyuei-kai</a>
+                <a href="index.html#faculty" class="nav-link">Faculty</a>
+                <a href="index.html#admissions" class="nav-link">Admissions</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="focus:outline-none">
+                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="py-24 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h1 class="text-4xl md:text-5xl font-bold mb-2 text-red-800">Journal “Kyudai Eibungaku”</h1>
+                        <p class="text-xl text-gray-500 font-bold">『九大英文学』バックナンバー</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-lg border border-gray-200 mb-12">
+                        <h3 class="text-2xl font-bold mb-4">『九大英文学』のご紹介</h3>
+                        <p class="text-gray-700 leading-relaxed space-y-4">
+                            <span>『九大英文学』は、九州大学大学院人文科学府の英語学・英文学専攻学生、および九州大学英文学会の会員による、英文学・アメリカ文学・英語学に関する研究発表誌です。</span>
+                            <span>創刊号のHORIZONを第2号よりCairnへ改題、第31号より『九大英文学』へと改題、更に第49号からは新たに査読付論文掲載誌として生まれ変わりました。</span>
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-lg border border-gray-200 mb-16">
+                        <h3 class="text-2xl font-bold mb-4">バックナンバー一覧</h3>
+                        <p class="text-gray-700 mb-6">各号数へジャンプします。</p>
+                        <div class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-2 text-center">
+                            <a href="#issue-65" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">65号</a>
+                            <a href="#issue-64" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">64号</a>
+                            <a href="#issue-63" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">63号</a>
+                            <a href="#issue-62" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">62号</a>
+                            <a href="#issue-61" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">61号</a>
+                            <a href="#issue-60" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">60号</a>
+                            <a href="#issue-59" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">59号</a>
+                            <a href="#issue-58" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">58号</a>
+                            <a href="#issue-57" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">57号</a>
+                            <a href="#issue-56" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">56号</a>
+                            <a href="#issue-55" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">55号</a>
+                            <a href="#issue-54" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">54号</a>
+                            <a href="#issue-53" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">53号</a>
+                            <a href="#issue-52" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">52号</a>
+                            <a href="#issue-51" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">51号</a>
+                            <a href="#issue-50" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">50号</a>
+                            <a href="#issue-49" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">49号</a>
+                            <a href="#issue-48" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">48号</a>
+                            <a href="#issue-47" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">47号</a>
+                            <a href="#issue-46" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">46号</a>
+                            <a href="#issue-45" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">45号</a>
+                            <a href="#issue-44" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">44号</a>
+                            <a href="#issue-43" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">43号</a>
+                            <a href="#issue-42" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">42号</a>
+                            <a href="#issue-41" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">41号</a>
+                            <a href="#issue-40" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">40号</a>
+                            <a href="#issue-39" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">39号</a>
+                            <a href="#issue-38" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">38号</a>
+                            <a href="#issue-37" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">37号</a>
+                            <a href="#issue-36" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">36号</a>
+                            <a href="#issue-35" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">35号</a>
+                            <a href="#issue-34" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">34号</a>
+                            <a href="#issue-33" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">33号</a>
+                            <a href="#issue-32" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">32号</a>
+                            <a href="#issue-31" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">31号</a>
+                            <a href="#issue-30" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">30号</a>
+                            <a href="#issue-29" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">29号</a>
+                            <a href="#issue-28" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">28号</a>
+                            <a href="#issue-27" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">27号</a>
+                            <a href="#issue-26" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">26号</a>
+                            <a href="#issue-25" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">25号</a>
+                            <a href="#issue-24" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">24号</a>
+                            <a href="#issue-23" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">23号</a>
+                            <a href="#issue-22" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">22号</a>
+                            <a href="#issue-21" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">21号</a>
+                            <a href="#issue-20" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">20号</a>
+                            <a href="#issue-19" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">19号</a>
+                            <a href="#issue-18" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">18号</a>
+                            <a href="#issue-17" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">17号</a>
+                            <a href="#issue-16" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">16号</a>
+                            <a href="#issue-15" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">15号</a>
+                            <a href="#issue-14" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">14号</a>
+                            <a href="#issue-13" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">13号</a>
+                            <a href="#issue-12" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">12号</a>
+                            <a href="#issue-11" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">11号</a>
+                            <a href="#issue-10" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">10号</a>
+                            <a href="#issue-09" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">09号</a>
+                            <a href="#issue-08" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">08号</a>
+                            <a href="#issue-07" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">07号</a>
+                            <a href="#issue-06" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">06号</a>
+                            <a href="#issue-05" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">05号</a>
+                            <a href="#issue-04" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">04号</a>
+                            <a href="#issue-03" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">03号</a>
+                            <a href="#issue-02" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">02号</a>
+                            <a href="#issue-01" class="bg-gray-100 hover:bg-red-100 text-gray-800 py-2 px-1 rounded-md transition-colors text-sm">01号</a>
+                        </div>
+                    </div>
+
+                    <div class="space-y-12">
+                        <!-- All issues from 65 down to 1 -->
+                        <div id="issue-65" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">2023年 (第65号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">島居 佳江</div><div>J. R. R. トールキンが封印した命名法と家系図</div>
+                                <div class="font-semibold">渡邉 裕子</div><div>運命の「物語」を創造するのは誰か―J. R. R. Tolkien作品から考えるファンタジー論</div>
+                                <div class="font-semibold">隈部 歩</div><div>The “Antenatal Tomb”と歌う女性―George MacDonaldの<i>Phantastes</i>における女性の声、身体、そして生命観―</div>
+                                <div class="font-semibold">川満 潤</div><div>Labeling in Edge</div>
+                                <div class="font-semibold">久保田 舞</div><div>Quantifier Scope Assignment and A-reconstruction</div>
+                                <div class="font-semibold">作元 裕也</div><div>Free Merge and Phases</div>
+                                <div class="font-semibold">森竹 希望</div><div>A Short Note on the Distribution of the Expletive <i>It</i> in English</div>
+                                <div class="font-semibold">尹 伊萌</div><div>Sewing up Separated Spheres: Charlotte Brontë’s Vision of Feminist History in <i>Shirley</i></div>
+                                <div class="font-semibold">横井 翔馬</div><div>『デイヴィッド・コパフィールド』におけるミーム複製</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-64" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">2022年 (第64号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">谷 綾子</div><div><i>Cranford</i>とSexuality</div>
+                                <div class="font-semibold">淺田 えり佳</div><div>『フランケンシュタイン』における父子像とミソジニー</div>
+                                <div class="font-semibold">川村 真央</div><div>The Logicalized Freedom of Isabel Archer: Ratiocentrism in Henry James’s <i>The Portrait of a Lady</i></div>
+                                <div class="font-semibold">作元 裕也</div><div>On the Derivation of Control Constructions in POP+</div>
+                                <div class="font-semibold">森竹 希望</div><div>On Case-Marking in <i>There</i>-Constructions: A Default case Approach</div>
+                                <div class="font-semibold">末永 広大</div><div>On the Derivation of <i>Wh</i>-Subject Questions in English</div>
+                                <div class="font-semibold">宮元 創</div><div>Asymmetries between the Structures of v*P and CP in Terms of Labeling Algorithm</div>
+                                <div class="font-semibold">山本 天斗</div><div>Reconstruction Effects in the Extraposed Restrictive Relative Clause</div>
+                            </div>
+                        </div>
+                        
+                        <div id="issue-63" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">2021年 (第63号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">田中 恵理</div><div>Paralyzed and Liberated Bodies of Male Characters in <i>Dubliners</i></div>
+                                <div class="font-semibold">吉村 幸</div><div>Sound Echoes in the Wilderness:"The Bear" and the Environmental Crisis of the South</div>
+                                <div class="font-semibold">隈部 歩</div><div>Ireneで始まりIreneで終わる「平和の円環構造」―George MacDonaldの<i>Princess</i>二部作における女性像と生―</div>
+                                <div class="font-semibold">ソンセイロ</div><div>Serious Playfulness: Humour in <i>Nocturnes: Five Stories of Music and Nightfall</i></div>
+                                <div class="font-semibold">森田 司</div><div>『エデンの園』に見るモチーフの繰り返し</div>
+                                <div class="font-semibold">川満 潤</div><div>A Labeling Analysis of Quantifier Float in English</div>
+                                <div class="font-semibold">久保田 舞</div><div>On Depictive Secondary Predicates: Comparative Study of Two Types of Depictive Secondary Predicates</div>
+                                <div class="font-semibold">作元 裕也</div><div>A Movement Analysis of <i>For To</i> Infinitives</div>
+                                <div class="font-semibold">森竹 希望</div><div>On the Peculiarities of Small Clauses: Clausehood and Selectional Relations</div>
+                                <div class="font-semibold">宮元 創</div><div>On Locative Inversion in English</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-62" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">2020年 (第62号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">浅田 えり佳</div><div>恐怖に汚染される胎児―Bram Stoker作品における妊娠と出産</div>
+                                <div class="font-semibold">ソン セイロ</div><div>The Return of the Repressed: An Analysis of the Uncanniness in the Repetitions of A Pale View of Hills</div>
+                                <div class="font-semibold">田島 健太郎</div><div>D. H. ロレンスの『狐』に見る狐の象徴性―眠りの両義性からの再解釈</div>
+                                <div class="font-semibold">作元 裕也</div><div>On the Minimal Link Condition in Comparison to the Phase Impenetrability Condition</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-61" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">2019年 (第61号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">岩下いずみ</div><div>On “Magic Lantern” in “Grace” by James Joyce</div>
+                                <div class="font-semibold">福永 綾</div><div>『説得』に見る、ジェイン・オースティンの新たな試み―主人公の内面の葛藤の決着</div>
+                                <div class="font-semibold">松下 紗耶</div><div>Armand and Désirée “Enact” Scenes: Performing Race and Gender in Kate Chopin’s “Désirée’s Baby”</div>
+                                <div class="font-semibold">石垣 恵一</div><div>英語前置詞overの従事用法のフレーム意味論的考察</div>
+                                <div class="font-semibold">臼井 由香</div><div>A Feature-based Approach to A’-movement in Terms of the Directionality</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-60" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">2018年 (第60号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">吉田 希依</div><div>"In A World Where Things Fall Apart":The Boundary of Self in Mrs. Dalloway and Sula</div>
+                                <div class="font-semibold">田中 恵理</div><div>Orlando’s Binary Oppositions and Their Cyclical Emergence</div>
+                                <div class="font-semibold">田島 健太郎</div><div>『虹』における近代の「不毛」</div>
+                                <div class="font-semibold">川村 真央</div><div>Henry Jamesの満たされない願望とその葛藤―The Americanに見る自己の投影</div>
+                                <div class="font-semibold">山口 晋平</div><div>The Destruction of Model and the Lost Story in The Marble Faun</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-59" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">2017年 (第59号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">岩下 いずみ</div><div>『若い芸術家の肖像』におけるスティーヴンの遊歩と視覚</div>
+                                <div class="font-semibold">田島 健太郎</div><div>『恋する女たち』における男同士の愛</div>
+                                <div class="font-semibold">田中 雅子</div><div>『ハワーズ・エンド』における中産階級のカントリーハウス</div>
+                                <div class="font-semibold">田中 優子</div><div>Diamond and "Better Love" than that of North Wind in <i>At the Back of the North Wind</i></div>
+                                <div class="font-semibold">渡邉 裕子</div><div>The Power of Re-Creation: The Functions of a Fairy Story in "Smith of Wootton Major"</div>
+                                <div class="font-semibold">河野 世莉奈</div><div>自己の確立へ―「衣服」から読む<i>Song of Solomon</i></div>
+                                <div class="font-semibold">幸山 智子</div><div>In Quest of Poetry: A Comparative Study of Tennessee Williams's "Plastic Theatre" and Konstantin Stanislavki's <i>An Actor Prepares</i></div>
+                                <div class="font-semibold">古川 琢磨</div><div>Trans-Temporal Mixture for a Modern Realistic Intruder: Hank Morgan's Adaptation to Medieval Fantastic World in Mark Twain's <i>A Connecticut Yankee in King Arthur's Court</i></div>
+                                <div class="font-semibold">松下 紗耶</div><div>Passing Women's Race and Sexuality: the Loss of Innocence and the Veil of Performance in Nella Larsen's <i>Passing</i></div>
+                                <div class="font-semibold">高場 清子</div><div>The Syntax of <i>If</i>-Clauses: Six Subtypes of Adverbial <i>If</i>-Clauses</div>
+                                <div class="font-semibold">林 愼将</div><div>On Restrictive Relative Clauses in English</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-58" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">2016年 (第58号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">淺田 えり佳</div><div>『ドラキュラ』における異性を疎外する絆―手記の閲読と秘密の共有</div>
+                                <div class="font-semibold">今村 紅子</div><div>行動するヒロインと帰郷者の誤算―牧歌的ロマンスから田園の悲劇へ、ハーディの『帰郷』再読</div>
+                                <div class="font-semibold">隈部 歩</div><div>To “Go Out” and See the World through Innocent Eyes: The View of Life and Death in George MacDonald’s “The Day Boy and the Night Girl”</div>
+                                <div class="font-semibold">Brian Thomas Fox</div><div>Literature on Trial in Britain: An Historical Survey of the Oscar Wilde and D. H. Lawrence Trials at the Old Bailey</div>
+                                <div class="font-semibold">渡邉 裕子</div><div>A Never-Ending Holiday: The Sense of the Limit of Creation in J.R.R. Tolkien’s “Leaf by Niggle”</div>
+                                <div class="font-semibold">河野 世莉奈</div><div>依存から自立へ―<i>Sula</i>における「靴」の描写</div>
+                                <div class="font-semibold">吉村 幸</div><div>Appropriate Way of Southern Life: Faulkner’s Perspective Declared in “Shingles for the Lord”</div>
+                                <div class="font-semibold">黒木 隆善</div><div>フェイズ指定部からの抜き取りに関する再考</div>
+                                <div class="font-semibold">吉村 理一</div><div>日本語の原因・理由節における付加詞条件を巡って</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-57" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">2015年 (第57号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">大谷 英理果</div><div>Interaction between Hosts and Guests: E. M. Forster’s Representation of Modern Tourism in Where Angels Fear to Tread and “The Eternal Moment”</div>
+                                <div class="font-semibold">隈部 歩</div><div>The Family Tree in Blossom: The Circular Structure of Peace in George MacDonald’s Princess Books</div>
+                                <div class="font-semibold">才津 絢子</div><div>Daniel Defoeの、認識の限界を埋める想像力の応用 — 表現の限界の克服</div>
+                                <div class="font-semibold">田中 恵里</div><div>A Study of Pornographic Descriptions of Women and Molly’s Artistic Monologue in Ulysses</div>
+                                <div class="font-semibold">浜本 裕美</div><div>“Little Daylight” in George MacDonald’s At the Back of the North Wind</div>
+                                <div class="font-semibold">渡邉 裕子</div><div>ジョージ・マクドナルド『北風のうしろの国』の巡る月・沈まぬ太陽</div>
+                                <div class="font-semibold">大畠 夕依</div><div>To Confine and To Be Confined:“The Pit and the Pendulum” and “The Cask of Amontillado”</div>
+                                <div class="font-semibold">吉村 理一</div><div>A Reduced Approach of QR to a Discourse-oriented Movement</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-56" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">2014年 (第56号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">淺田 えり佳</div><div>Motherhood Rules: An Angel or a Queen in the House?</div>
+                                <div class="font-semibold">隈部 歩</div><div>「リリスでさえも出産によって救われるだろう」―ジョージ・マクドナルドの『リリス』における生命の輪の継承と新生の可能性</div>
+                                <div class="font-semibold">浜本 裕美</div><div>Creative Fluidity in Art and Love in Barrett Browning’s <i>Aurora Leigh</i></div>
+                                <div class="font-semibold">原田 洋海</div><div>One Could Say What One Meant: Communicating Feelings in <i>To the Lighthouse</i></div>
+                                <div class="font-semibold">渡邉 裕子</div><div>『ドワーフ』帰還の物語―『ホビット』における伝統的叙事詩の世界観の回復</div>
+                                <div class="font-semibold">河野 世莉奈</div><div>A Response to Mother’s Wish: The Shoe Motif in <i>A Mercy</i></div>
+                                <div class="font-semibold">斎藤 彩世</div><div>ヘンリー・ジェイムズ作品に見られるシャーロット・ブロンテの影響について</div>
+                                <div class="font-semibold">大塚 知昇</div><div>転送操作とスコープ解釈に関する考察―弱フェイズの観点から―</div>
+                                <div class="font-semibold">萱嶋 崇</div><div>心理動詞の項構造と使役化</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-55" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">2013年 (第55号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">大谷 英理果</div><div>『船出』における旅の意味の二重性－ヴァージニア・ウルフによる旅行表象－</div>
+                                <div class="font-semibold">浜本 裕美</div><div>From Dark Corinne to Fair Aurora: Barrett Browning and Female Physical Representations</div>
+                                <div class="font-semibold">原田 洋海</div><div>生を享受する魂―『ダロウェイ夫人』におけるコミュニケーション―</div>
+                                <div class="font-semibold">日下 幸織</div><div>書き手としてのニックとディック――『グレート・ギャツビー』と『夜はやさし』に読むモダニスト作家の苦闘</div>
+                                <div class="font-semibold">田島 優子</div><div>The Protagonist’s Ambiguities and Downfall in Melville’s <i> Pierre; or, The Ambiguities </i></div>
+                                <div class="font-semibold">吉田 希依</div><div>内なる荒野へ― <i>A Mercy</i>における自由への飛翔―</div>
+                                <div class="font-semibold">吉村 幸</div><div>Invertible Gender in the Postbellum South: The Ambiguous Identity of Quentin Compson in <i>The Sound and the Fury</i></div>
+                                <div class="font-semibold">大塚 知昇</div><div>弱フェイズに関する考察―素性継承の拡張―</div>
+                                <div class="font-semibold">萱嶋 崇</div><div>A Unified Analysis of Causatives and Passives</div>
+                                <div class="font-semibold">永次 健人</div><div>Fragments within Islands</div>
+                                <div class="font-semibold">溝江 恵美子</div><div>On Floating Quantifiers</div>
+                                <div class="font-semibold">吉村 理一</div><div>The Factors of Licensing/Blocking Extraction out of Adverbial Clauses</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-54" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">2012年 (第54号) <span class="text-xl text-gray-600 font-medium">村井和彦先生追悼号</span></h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">浅田 えり佳</div><div>脅かす子ども―『フランケンシュタイン』における疑似的親子と植民地主義―</div>
+                                <div class="font-semibold">大谷 英理果</div><div>Tourism, Anti-Tourism, and Communitas: E. M. Forster's Representation of Modern Tourism in <i>A Room with a View</i></div>
+                                <div class="font-semibold">園田 靖</div><div>『静寂』を破る毒――王子Hamletを殺したもの</div>
+                                <div class="font-semibold">田中 優子</div><div>Grotesqueness and Cruelty in George MacDonald's <i>The Princess and the Goblin</i></div>
+                                <div class="font-semibold">幸山 智子</div><div><i>Dangling Man</i>における視点と身体的所作の力学</div>
+                                <div class="font-semibold">永川 とも子</div><div>Hiroshima Survivors and Their "Mother Country," America: An Examination of the Japanese-American Hibakushas in Naomi Hirahara's <i>Summer of the Big Bachi</i></div>
+                                <div class="font-semibold">吉田 希依</div><div>A Disintegrating Story: The Circles of Violence in <i>The Bluest Eye</i></div>
+                                <div class="font-semibold">家入 葉子</div><div>Doubtにかかわる構文の歴史的変化について（2）――Early Modern English Prose Selectionsの分析から</div>
+                                <div class="font-semibold">大塚 知昇</div><div>英語の二重目的語構文および前置詞与格構文について―ミニマリストアプローチ―</div>
+                                <div class="font-semibold">下仮屋 翔</div><div>英語数量詞句の作用域解釈</div>
+                                <div class="font-semibold">高木 留美</div><div>On Gapping and Multiple Sluicing in English</div>
+                                <div class="font-semibold">前田 雅子</div><div>Covert Wh/Focus Movement Obeys Derivational Relativized Minimality in Japanese</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-53" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">2011年 (第53号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">浅田 えり佳</div><div>Abrahamと息子たちの功利―<i>Dracula</i>における堕落した女と家父長の継承―</div>
+                                <div class="font-semibold">田中 恵理</div><div><i>Dubliners</i>の女性―抑圧と解放―</div>
+                                <div class="font-semibold">斎藤 彩世</div><div>The Passage to Acquisition in <i>The Ambassadors</i></div>
+                                <div class="font-semibold">永川 とも子</div><div>Humanity against the A-Bomb: An Analysis of the Countervailing Power of the Six Protagonists in John Hersey’s <i>Hiroshima</i></div>
+                                <div class="font-semibold">下仮屋 翔</div><div>Rethinking the Structure of Clausal Gerunds</div>
+                                <div class="font-semibold">高木 留美</div><div>A Syntactic Analysis of Gapping in English</div>
+                                <div class="font-semibold">前田 雅子, 松本 知子</div><div>日本語のsluicing文に関する統語分析</div>
+                                <div class="font-semibold">真保栄 俊</div><div>複合名詞句における統語的派生について</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-52" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">2010年 (第52号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">轟 裕美</div><div>Charlotte Bronte の<i>Villette</i>における語りによる抑圧された情熱の解放</div>
+                                <div class="font-semibold">原田 洋海</div><div>孤独からの解放―『トムは真夜中の庭で』と『まぼろしの小さい犬』における子どもの願望</div>
+                                <div class="font-semibold">Taras A. Sak</div><div>Mistaking Literature for Life: Rereading <i>Into the Wild</i></div>
+                                <div class="font-semibold">田島 優子</div><div>ナサニエル･ホーソーンの『緋文字』における母親像からの自立</div>
+                                <div class="font-semibold">Carey Benom</div><div>On the (im)possibility of translation</div>
+                                <div class="font-semibold">阿部 春加</div><div>英語における<i>That</i>痕跡効果</div>
+                                <div class="font-semibold">黒木 隆善</div><div>Notes on <i>wh</i>-relative clauses</div>
+                                <div class="font-semibold">重松 諒爾</div><div>英語の場所句倒置構文について</div>
+                                <div class="font-semibold">下仮屋 翔</div><div>節的動名詞の統語的分析</div>
+                                <div class="font-semibold">西村 恵</div><div><i>Wh</i>-in-situ Phrases in English and the Phase Theory</div>
+                                <div class="font-semibold">松永 享子</div><div>英語の制限関係節の再構築に関して</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-51" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">2009年 (第51号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">田中 優子</div><div>George MacDonald の“The Golden Key”における恐怖と共にある生への肯定</div>
+                                <div class="font-semibold">高野 泰志</div><div>マリアの陵辱 ――『誰がために鐘は鳴る』における性と暴力</div>
+                                <div class="font-semibold">斎藤 彩世</div><div>Henry Jamesの“The Romance of Certain Old Clothes”における姉妹の葛藤</div>
+                                <div class="font-semibold">Nanoka Hayashi</div><div>Thoreauvian Salvation in the Wilderness: The Pursuit of Transcendental Virtue in the Water of Walden Pond</div>
+                                <div class="font-semibold">黒木 隆善</div><div>WH関係節における一考察 ―間接的Agree分析による説明―</div>
+                                <div class="font-semibold">福澤 健</div><div>英語における付加詞の「島」について</div>
+                                <div class="font-semibold">松本 知子</div><div>不定詞節と仮定法現在節の統語構造分析―wh島とthat生起の現象を中心に―</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-50" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">2008年 (第50号) <span class="text-xl text-red-700 font-medium">Special Fiftieth Issue</span></h4>
+                            <div class="space-y-6">
+                                <div>
+                                    <h5 class="text-2xl font-bold mb-4 border-b border-red-200 pb-2">英米文学</h5>
+                                    <div class="space-y-4 article-grid">
+                                        <div class="font-semibold">園井 英秀</div><div>マーヴェル諷刺詩と文学の構築力</div>
+                                        <div class="font-semibold">山内 正一</div><div>キーツとワーズワス―ワーズワスの1815年版『詩集』をめぐって―</div>
+                                        <div class="font-semibold">村里 好俊</div><div>『五月祭の佳人』とエリザベス女王治下の政治と宗教</div>
+                                        <div class="font-semibold">太田 一昭</div><div>シェイクスピア劇における愛の経済学</div>
+                                        <div class="font-semibold">高本 孝子</div><div>Ian McEwanの小説における生物学的人間観―<i>The Innocent</i>(1990)から<i>On Chesil Beach</i>(2007)までの概観―</div>
+                                        <div class="font-semibold">木原 謙一</div><div>イェイツのクフーリン―国家表象の意味づけと＜善悪の彼岸＞―</div>
+                                        <div class="font-semibold">園井 千音</div><div>コールリッジとユニテリアニズム―イギリス奴隷貿易廃止運動との関係を中心に―</div>
+                                        <div class="font-semibold">虹林 慶</div><div>ラスキンの｢野蛮｣さに見るロマン主義―｢ゴシックの本質｣におけるルソーの影響について―</div>
+                                        <div class="font-semibold">村井 和彦</div><div>シェイクスピアの‘Catechism’</div>
+                                        <div class="font-semibold">江川 琴美</div><div>ミルトンの理性観―<i>Paradise Lost</i>第3巻を中心に―</div>
+                                        <div class="font-semibold">Noriko Sunagawa</div><div>Henry James's <i>The Bostonians</i>: The Bond of Sisterhood and Gender Issues in the Post-Civil War Era</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="text-2xl font-bold mb-4 border-b border-red-200 pb-2">英語学</h5>
+                                    <div class="space-y-4 article-grid">
+                                        <div class="font-semibold">眞鍋 和瑞</div><div>通時的研究の問題点</div>
+                                        <div class="font-semibold">大庭 幸男</div><div>結果構文の統語的特徴とその構造について</div>
+                                        <div class="font-semibold">Hiroshi Ohashi</div><div>Why Don't They Bury You<i> in</i> the Prairie? Notes on Conceptualization and the Selection of Prepositions in English</div>
+                                        <div class="font-semibold">西岡 宣明</div><div>メタ言語的否定と言語現象―Before節中の過去完了形再考―</div>
+                                        <div class="font-semibold">家入 葉子</div><div>Doubtにかかわる構文の歴史的変化について―<i>The Oxford English Dictionary</i>の引用文データの分析から―</div>
+                                        <div class="font-semibold">Haruhiko Murao</div><div>Resultatives with a Creation Verb in Japanese and English</div>
+                                        <div class="font-semibold">田中 公介</div><div>節比較構文の統語構造分析</div>
+                                        <div class="font-semibold">黒木 隆善</div><div>寄生空所構文再考―Minimalist Programの観点から―</div>
+                                        <div class="font-semibold">西村 恵</div><div>優位効果と交差現象について</div>
+                                        <div class="font-semibold">松本 知子</div><div>知覚動詞と裸不定詞補文との整合性</div>
+                                        <div class="font-semibold">前田 雅子</div><div><i>There</i>構文とDP移動に関する統語的分析</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="text-2xl font-bold mb-4 border-b border-red-200 pb-2">思い出のエッセイ</h5>
+                                    <div class="space-y-4 article-grid">
+                                        <div class="font-semibold">小田 稔</div><div><i>HORIZON</i>創刊の頃</div>
+                                        <div class="font-semibold">鬼塚 敬一</div><div>幻のごとし、“HORIZON”創刊号</div>
+                                        <div class="font-semibold">田吹 長彦</div><div>アタヴィズム ― 亡国のエトス</div>
+                                        <div class="font-semibold">朱雀 成子</div><div><i>Cairn</i>―40年前の思い出</div>
+                                        <div class="font-semibold">山崎 和夫</div><div>｢Cairin 13号、のころ｣</div>
+                                        <div class="font-semibold">木下 善貞</div><div>使い回し</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="issue-49" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">2007年 (第49号) <span class="text-xl text-gray-600 font-medium">※本号より査読つき論文へ移行</span></h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">谷 綾子</div><div>拡大された自己― <i>Adam Bede </i>における他者との連帯</div>
+                                <div class="font-semibold">伊藤 恵理</div><div><i>A Portrait of the Artist as a Young Man </i>における詩人の｢新しく飛翔する｣女性の概念</div>
+                                <div class="font-semibold">Hiroyoshi Tanaka</div><div>Revised Parallel Merge Approach toward the ATB WH-question and its Consequence</div>
+                                <div class="font-semibold">Kazuhiro Masutomi</div><div>On the Phasehood of <i>n</i>P</div>
+                                <div class="font-semibold">松本 知子</div><div>知覚動詞の裸不定詞補文に関する統語的分析</div>
+                            </div>
+                        </div>
+                        
+                        <div id="issue-48" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">2005年 (第48号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">Kotomi Egawa</div><div>The Struggle against Arbitrariness of Providence: Miltonic Fate in <i>Samson Agonistes</i></div>
+                                <div class="font-semibold">山口 雅史</div><div><i>Wuthering Heights</i> における「教会」についての考察</div>
+                                <div class="font-semibold">川上 慶子</div><div><i>King Lear </i>における狂気の導き手―真実</div>
+                                <div class="font-semibold">谷 綾子</div><div><i>Adam Bede</i>, Geoge Eliot における肉体の発見</div>
+                                <div class="font-semibold">田中 公介</div><div>英語の仮定法現在節の統語構造とVP削除</div>
+                                <div class="font-semibold">増冨 和浩</div><div>英語派生名詞句における決定詞の分布について</div>
+                                <div class="font-semibold">黒木 隆善</div><div>２つの寄生空所構文における派生的違い</div>
+                                <div class="font-semibold">西村 恵</div><div>英語の多重 wh 疑問文における優位効果について</div>
+                                <div class="font-semibold">松本 知子</div><div>wager 類の補文主語に関する統語的分析</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-47" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">2004年 (第47号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">Mariko Nagase</div><div><i>Pericles</i>: “Art” Projecting “Nature”</div>
+                                <div class="font-semibold">Akiko Sonoda</div><div>The Monster as a Metaphor of Scientific Discovery: A Study of Mary Shelley's Frankenstein</div>
+                                <div class="font-semibold">岩下 いずみ</div><div>有限と無限のはざまで―ジョイス作品における断片に対する一考察―</div>
+                                <div class="font-semibold">上石田 麗子</div><div>言葉が終わって現実が始まる場所で―<i>St.Mawr </i>に描かれる｢言葉以後｣の世界</div>
+                                <div class="font-semibold">江口 浩一</div><div><i>Winesburg, Ohio</i> における詩人のまなざし</div>
+                                <div class="font-semibold">田中 公介</div><div>命令文の統語構造と機能範疇 ModP</div>
+                                <div class="font-semibold">増冨 和浩</div><div>英語名詞句からの要素の取り出しと特定性</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-46" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">2003年 (第46号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">原田 佳代</div><div><i>King Richard Ⅱ</i>: 鏡に映る王冠</div>
+                                <div class="font-semibold">長瀬 真理子</div><div>舞台裏の<i>Macbeth</i>: 歴史背景と芝居の多義性</div>
+                                <div class="font-semibold">Akiko Sonoda</div><div>Coleridge's Concern with Posterity and His Contemporaly Audience</div>
+                                <div class="font-semibold">山口 雅史</div><div>不調和から調和へ―<i>Wuthering Heights</i> におけるブロンテの理想と第二世代の位置づけをめぐって</div>
+                                <div class="font-semibold">小川 理香</div><div><i>Jude the Obscure</i> における欲求・距離・方向の衝突</div>
+                                <div class="font-semibold">岩下 いずみ</div><div><i>A Portrait of the Artist as a Young Man</i>: 作品の円環構造とモティーフの二重性</div>
+                                <div class="font-semibold">上石田 麗子</div><div>溶解と単独化―<i>Women in Love</i> に描かれる両極の運動</div>
+                                <div class="font-semibold">原口 遼</div><div>ホーソーンの幻の処女小説<i>Fanshawe</i> のアメリカ性</div>
+                                <div class="font-semibold">原口 遼</div><div>ファラッゾー著『エミリ･ディキンスン』―翻訳と解題(2)</div>
+                                <div class="font-semibold">川下 剛</div><div>“Roger Malvin's Burial” における戦争の傷跡</div>
+                                <div class="font-semibold">田中 公介</div><div>英語命令文の統語構造分析</div>
+                                <div class="font-semibold">増冨 和浩</div><div>名詞化表現における二重目的語構文―その内部構造と派生に関するミニマリスト統語論的分析</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-45" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">2002年 (第45号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">Kotomi Egawa</div><div>Admiration for Innate Conscience: The Voice of Puritans in Milton's <i>Paradise Lost</i></div>
+                                <div class="font-semibold">Akiko Sonoda</div><div>Mary Robinson in the Literary Marketplace</div>
+                                <div class="font-semibold">福井 由美子</div><div>ミルトンの『サムソン』におけるサムソンの英雄性について</div>
+                                <div class="font-semibold">河崎 妃奈</div><div>共同体の幻想― “A Rose for Emily” 論</div>
+                                <div class="font-semibold">川下 剛</div><div><i>The House of the Seven Gables</i> におけるピューリタンの教条主義と人間性</div>
+                                <div class="font-semibold">本田 みどり</div><div><i>O Pioneers!</i> における Cather の自己覚醒の萌芽とその文学的意味</div>
+                                <div class="font-semibold">Kazuhiro Masutomi</div><div>On the Word Formation in English: A Minimalist Approach to Derivative Words</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-44" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">2001年 (第44号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">鍋 琴美</div><div><i>Paradise Lost</i> における「罪」の成立</div>
+                                <div class="font-semibold">Akiko Sonoda</div><div>Poetic Vocations and Professions in the Early Three Versions of “The Monody on the Death of Chatterton”</div>
+                                <div class="font-semibold">Tomoko Miyamoto</div><div>Building Up the Image: The Reception of Keats</div>
+                                <div class="font-semibold">岩下 いずみ</div><div><i>Ulysses</i> における喪失と回復―擬似家族がもたらすもの</div>
+                                <div class="font-semibold">三宅 愛</div><div>ダロウェイ夫人からクラリッサヘ―魂の仮死から生へ―</div>
+                                <div class="font-semibold">河崎 妃奈</div><div>供犠的暴力― <i>As I Lay Dying</i> 小考</div>
+                                <div class="font-semibold">星子 奈美</div><div><i>V.</i>における情報の断片とその解釈</div>
+                                <div class="font-semibold">Yoshio Nakamura</div><div>Literary Phantom</div>
+                                <div class="font-semibold">三苫 正寛</div><div>等位接続の統語構造について</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-43" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">2000年 (第43号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">浴野 朝香</div><div>神秘への指向―融合の果てに―</div>
+                                <div class="font-semibold">Yuko Oka</div><div>Forgiveness in <i>The Elder Statesman</i></div>
+                                <div class="font-semibold">Akiko Sonoda</div><div>Coleridge's Poetry in <i>The Morning Post</i></div>
+                                <div class="font-semibold">Hina Kawasaki</div><div>Madness and Narrative Relativity in Faulkner's <i>As I Lay Dying</i></div>
+                                <div class="font-semibold">Noriko Sunakawa</div><div>Masculine, Feminine and “Perversion” of Gender in Henry James's <i>The Bostonians</i></div>
+                                <div class="font-semibold">山田 久美</div><div>残夏の表象：南部共同体の異邦人</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-42" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1999年 (第42号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">Akiko Sonoda</div><div>“This Lime-Tree Bower My Prison” : A Poem of Achieved Communication</div>
+                                <div class="font-semibold">井原 美和子</div><div>Austen の<i>Sanditon</i> にみられる「自然性」崩壊の兆し</div>
+                                <div class="font-semibold">Tomoko Miyamoto</div><div>The Representation of Pain, Disease and Death in <i>Lamia</i></div>
+                                <div class="font-semibold">岩下 いずみ</div><div>Exile と芸術家の自己確立<i>A Portrait of the Artist as a young Man　</i>を中心に</div>
+                                <div class="font-semibold">Yuko Oka</div><div><i>The Order in The Cocktail Party</i></div>
+                                <div class="font-semibold">山田 久美</div><div>父の陰翳―Thoreau 父子に見る場所の感覚</div>
+                                <div class="font-semibold">Reiko Akiyoshi</div><div>Double-Voiced Narrative in Melville's　“The Tartarus of Maids”</div>
+                                <div class="font-semibold">原口 遼</div><div>R.W.Franklin 博士との面会の記 付録 翻訳 ディキンスンの“Master Letters 1, 2 & 3”</div>
+                                <div class="font-semibold">砂川 典子</div><div>“The Beast in the Jungle”におけるAbyss</div>
+                                <div class="font-semibold">山崎 英司</div><div><i>The Great Gatsby</i> における西部イメージの表出</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-41" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1998年 (第41号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">道行 千枝</div><div>『お気に召すまま』の森―その役割と意味</div>
+                                <div class="font-semibold">Miho sugimoto</div><div>Alchemy and Poetic Redemption in Donne's <i>songs and Sonnets</i></div>
+                                <div class="font-semibold">Akiko Sonoda</div><div>“Youth and Age”： Coleridge's Later Poetic Achievement</div>
+                                <div class="font-semibold">Miwako Ihara</div><div>Austen's Symbolic Voice in<i>Mansfield Park</i>: Irony and Poetry</div>
+                                <div class="font-semibold">Kei Nijibayashi</div><div>Reforming Dramas: A Study of Byron's Histrical Dramas</div>
+                                <div class="font-semibold">宮本 朋子</div><div><i>Lamia</i>―誘惑と破滅のアイロニー</div>
+                                <div class="font-semibold">Atsuko Yamaguchi</div><div>Pip's Sight in <i>Great Expectations</i></div>
+                                <div class="font-semibold">田中 雅子</div><div><i>Howards End</i> における肉体性の奪取</div>
+                                <div class="font-semibold">古賀 美穂子</div><div>「個」と他者の融解―“The Hollow Men”の語りの変容</div>
+                                <div class="font-semibold">Kumi Yamada</div><div>Symbols in Thoreau's Transcendental Quest</div>
+                                <div class="font-semibold">原口 遼</div><div>計算された失敗―『ハックルベリー・フィンの冒険』の結末部小考</div>
+                                <div class="font-semibold">Reiko Akiyoshi</div><div>Theodore Dreiser and Labor of the Age</div>
+                                <div class="font-semibold">山崎 英司</div><div><i>Tender Is the Night</i>における｢白痴性｣</div>
+                                <div class="font-semibold">中村 嘉雄</div><div>“Big Two-Hearted River”: 空間イメージについての分析心理学的一考察</div>
+                                <div class="font-semibold">河崎 妃奈</div><div>南部を支配する「血」の類型―『八月の光』のジョー・クリスマスの物語</div>
+                                <div class="font-semibold">Noriko Sunakawa</div><div>Vladimir Nabokov's <i>The Gift</i>: Fictionalization of Nostalgia</div>
+                                <div class="font-semibold">Ryo Haraguchi</div><div>Temporality and Slant Light in Edward Hopper's<i>Sunlight in a Cafeteria</i></div>
+                                <div class="font-semibold">中野 康子</div><div>英語の二次述語と出来事的構造</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-40" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1997年 (第40号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">村里 好俊, 杉本 美穂, 山口 敦子, 道行 千枝</div><div>フィリップ・シドニー『オールド・アーケイディア』 訳・註「第2巻」その1</div>
+                                <div class="font-semibold">高森 暁子</div><div>対外戦争と「女性性」―『ヘンリー5世』の場合</div>
+                                <div class="font-semibold">Akiko Sonoda</div><div>Coleridge’ “Dejection: An Ode”: The Loss and Resumption of Poetic Imagination</div>
+                                <div class="font-semibold">Kei Nijibayashi</div><div>Fallen Beatrice: De-idealization in Shelley's <i>The Cenci</i></div>
+                                <div class="font-semibold">馬渡 悠佳子</div><div>重なり合う声; Shelley 小考その2</div>
+                                <div class="font-semibold">Atsuko Yamaguchi</div><div>Fortune, Clothes, House, and Language: A Discussion of Four Properties in <i>Great Expectations</i></div>
+                                <div class="font-semibold">田中 雅子</div><div><i>A Passage to India</i> におけるマラバー洞窟事件についての一考察</div>
+                                <div class="font-semibold">古賀 美穂子</div><div>“Any man might do a girl in”: Evilとスウィーニー</div>
+                                <div class="font-semibold">野田 明弘</div><div>初期ベケットの「社会主義」観について</div>
+                                <div class="font-semibold">Kumi Yamada</div><div>A Solitary Chanticleer in <i>Walden</i></div>
+                                <div class="font-semibold">Ryo Haraguchi</div><div>Dickinson's “Death Poems”: Temporality, Poetry, and the Rejection of Religious Immortality</div>
+                                <div class="font-semibold">Miyuki Oura</div><div>Knowing “the Unknown”: “Self” in the poetry of Emily Dickinson</div>
+                                <div class="font-semibold">八尋 真由実</div><div><i>What Maisie Knew</i>: メイジーの担う役割と「家族」</div>
+                                <div class="font-semibold">河崎 妃奈</div><div><i>Go down, Moses</i>―「黒人解放」と南部白人意識</div>
+                                <div class="font-semibold">大木 正明</div><div>寓話に見る世界の｢ねじれ｣―John Steinbeckの<i>The Pearl―</i></div>
+                                <div class="font-semibold">Akira Hiroe</div><div>More on Complementizer Deletion Phenomena in English</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-39" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1996年 (第39号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">Miho Sugimoto</div><div>Sidney's <i>Defence of Poesy</i>: An Interpretation of His Creative Theory</div>
+                                <div class="font-semibold">Minako Muraoka</div><div>Poetic Relativance of Eternity in <i>Paradise Lost</i></div>
+                                <div class="font-semibold">馬渡 悠佳子</div><div>「深み」への上昇： Shelley 小考</div>
+                                <div class="font-semibold">宮本 朋子</div><div>二つの<i>Hyperion</i>―女神と「救済」をめぐって</div>
+                                <div class="font-semibold">Kei Nijibayashi</div><div>Two Kinds of Madness in <i>Julian and Maddalo</i></div>
+                                <div class="font-semibold">古賀 美穂子</div><div><i>Murder in the Cathedral </i>における殺人の観客からの detachment の生みだす意味について</div>
+                                <div class="font-semibold">野田 朋弘</div><div>状況に対抗する Protagonist としてのマーフィーとスティーヴン</div>
+                                <div class="font-semibold">山田 久美</div><div>Henry David Thoreau ―永遠の尋ね人</div>
+                                <div class="font-semibold">秋好 礼子</div><div>“Benito Cereno”―その語りの向こうにあるもの</div>
+                                <div class="font-semibold">八尋 真由美</div><div>人生の交錯― <i>The Portrait of a Lady</i> 論</div>
+                                <div class="font-semibold">砂川 典子</div><div><i>The Ambassadors</i> ―視点と視点的人物における印象についての一考察―</div>
+                                <div class="font-semibold">中村 嘉雄</div><div>ヘミングウェイと結婚と家庭(1)：従属と自己破壊</div>
+                                <div class="font-semibold">Masaaki Oki</div><div>A Study of <i>The Grapes of Wrath</i>: Man's Great Capacity of Heart and “To Go”</div>
+                                <div class="font-semibold">Fumiko Yoshimura</div><div>A Study of the Chainge of Expository Rhetorical Schema in Japanese Students Studying in America</div>
+                                <div class="font-semibold">松元 浩一</div><div>二重目的語構文に現れる不変化詞の認可</div>
+                                <div class="font-semibold">Yoshihiro Munemasa</div><div>Alternative Conceptions of Reflexible Binding</div>
+                                <div class="font-semibold">中野 康子</div><div>結果の二次述語と方向を表す前置詞句について</div>
+                                <div class="font-semibold">Akira Hiroe</div><div><i>With</i> ―adjunct</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-38" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1995年 (第38号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">Chine Sonoi</div><div>Wordsworth and the Slave Trade</div>
+                                <div class="font-semibold">Kei Nijibayashi</div><div>Wordsworth's Ambiguity towards the Public: A Study of the “Preface to <i>Poems</i>” and the “Essay Supplementary to the Preface”</div>
+                                <div class="font-semibold">井原 美和子</div><div>『説得』：死と再生</div>
+                                <div class="font-semibold">田中 雅子</div><div><i>A Passage to India</i> におけるメタファーとしての音楽</div>
+                                <div class="font-semibold">古賀 美穂子</div><div>T. S. Eliot と詩の言語についての一考察</div>
+                                <div class="font-semibold">Reiko Akiyoshi</div><div>The Secret of the Absent “Father” in <i>Redburn</i>, <i>Moby-Dick</i>, and <i>Pierre</i></div>
+                                <div class="font-semibold">上原 真由美</div><div>Henry James の The American における Claire de Cintre の葛藤と修道院入りについて</div>
+                                <div class="font-semibold">Fumiko Yoshimura</div><div>The Effect of L1 Story Schema in L2 Narrative Text Comprehension</div>
+                                <div class="font-semibold">Yoshihiro Munemasa</div><div>Cliticization of Reflexive</div>
+                                <div class="font-semibold">中野 康子</div><div>使役交替と使役化について</div>
+                                <div class="font-semibold">廣江 顕</div><div>分詞句について</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-37" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1994年 (第37号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">船津 和子</div><div>ジョン・ダンの恋愛詩における宗教性 (その一)</div>
+                                <div class="font-semibold">村岡 三奈子</div><div>A Study of <i>Paradise Regained:</i> Knowledge, Its Two Sides</div>
+                                <div class="font-semibold">矢次 綾</div><div>The Double in Gothic Romance: A Study of <i>The Monk</i>, <i>Frankenstein</i>,“William Wilson,” <i>The Strange Case of Dr Jekyll and Mr Hyde</i>, and The <i>Picture of Dorian Gray</i></div>
+                                <div class="font-semibold">岡 有子</div><div>The Idea of Time in T.S.Eliot's <i>Four Quartets</i></div>
+                                <div class="font-semibold">宮原 一成</div><div>提議 (proposition) としての<i>The Scopion God</i></div>
+                                <div class="font-semibold">青井 格</div><div>“The Custom-House” ―序文―</div>
+                                <div class="font-semibold">原口 遼</div><div>ディキンスン詩全訳の試み (400番台詩･･･Part Ⅰ)</div>
+                                <div class="font-semibold">原口 遼</div><div>テキストのエアポケット ―『目覚め』の「死ぬまで泳ぐ」という結末部をめぐって</div>
+                                <div class="font-semibold">大木 正明</div><div><i>Of Mice and Men</i> 考 ―「孤独」そして「(再)生」の行方―</div>
+                                <div class="font-semibold">八尋 春海</div><div>オーギー・マーチの「管理」との戦い</div>
+                                <div class="font-semibold">荘口 美樹子</div><div>擬似修飾節について</div>
+                                <div class="font-semibold">Matsumoto Koh-ich</div><div>Argument Structure Inheritance of Double Object Construction</div>
+                                <div class="font-semibold">Tomio Hirose</div><div>On English Middle: its property reading and syntactic structure</div>
+                                <div class="font-semibold">宗正 佳啓</div><div>弱交差現象と寄生空所</div>
+                                <div class="font-semibold">Munemasa Yoshihiro</div><div>Subject-Auxiliary Inversion</div>
+                                <div class="font-semibold">中野 康子</div><div>Way- 構文に関する一考察</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-36" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1993年 (第36号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">虹林 慶</div><div>詩人と読者の関係から読む<i>Don juan</i></div>
+                                <div class="font-semibold">青井 格</div><div><i>The Marble Faun</i>論―原罪と差異化について―</div>
+                                <div class="font-semibold">原口 遼</div><div>ディキンスン詩抄訳―200～800番の詩の全訳―</div>
+                                <div class="font-semibold">八尋 春海</div><div><i>A Theft</i>―個の発見をめぐって―</div>
+                                <div class="font-semibold">荘口 美樹子</div><div>節を先行詞とするas節について</div>
+                                <div class="font-semibold">野仲 響子</div><div>ルネッサンス英語における不定詞付help構文</div>
+                                <div class="font-semibold">松元 浩一</div><div>Two Ways of Production of English Double Object Construction</div>
+                                <div class="font-semibold">廣瀬 富男</div><div>Argument／adjunct asymmetry and Binding Theory</div>
+                                <div class="font-semibold">宗正 佳啓</div><div>Abstract Movement of Functional Category and “<i>That</i>-Trace Effect”</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-35" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1992年 (第35号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">大和 高行</div><div>Hamletに於ける秩序回復の戦い―三組の父親と息子の関係から見た一考察―</div>
+                                <div class="font-semibold">青井 格</div><div>Nathaniel Hawthorneの作品における｢原罪｣について</div>
+                                <div class="font-semibold">八尋 春海</div><div><i>Seize the Day</i>における老化のイメージについて</div>
+                                <div class="font-semibold">宗正 佳啓</div><div>外地と着地点</div>
+                                <div class="font-semibold">松元 浩一</div><div>二重目的語構文と投射原理</div>
+                                <div class="font-semibold">Yumi Mukoda</div><div>On Lexical Subordination</div>
+                                <div class="font-semibold">村尾 治彦</div><div>聞き手のパラドックス解消からみたアイロニー分析</div>
+                                <div class="font-semibold">野仲 響子</div><div>Shakespeareにおける不定詞の意味上の主語について</div>
+                                <div class="font-semibold">荘口 美樹子</div><div>結果を表す構文に関する一考察</div>
+                            </div>
+                        </div>
+                        
+                        <div id="issue-34" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1991年 (第34号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">吉原 ゆかり</div><div><i>Measure for Measure</i>の冶金学―貨幣・材質検査・贖罪―</div>
+                                <div class="font-semibold">山内 暁彦</div><div>スウィフトの女性観について</div>
+                                <div class="font-semibold">後藤 美映</div><div>キーツの詩における眠りと想像力</div>
+                                <div class="font-semibold">宮原 一成</div><div>Lewis Carrollの心理構造とそのモデル</div>
+                                <div class="font-semibold">石井 有希子</div><div><i>Jude the Obscure</i>試論―分裂の向こうにみえるもの―</div>
+                                <div class="font-semibold">青井 格</div><div>社会的作家としてのNathaniel Hawthorne―「読み取る」ことと支配すること―</div>
+                                <div class="font-semibold">大城 房美</div><div>“The Man of the Crowd”: 幻想の空間</div>
+                                <div class="font-semibold">竹内 勝徳</div><div><i>The Confidence-Man </i>における「演技」の構造</div>
+                                <div class="font-semibold">原口 遼</div><div>Faulkner の<i>Mississippi Poems</i>評釈</div>
+                                <div class="font-semibold">八尋 春海</div><div>ヘンダンソンの挑戦</div>
+                                <div class="font-semibold">村尾 治彦</div><div>英語トートロジーの意味と機能</div>
+                                <div class="font-semibold">野仲 響子</div><div>Shakespeareにおける「不定詞付体格」構文</div>
+                                <div class="font-semibold">荘口 美樹子</div><div>倒置文の特長に関する一考察</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-33" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1990年 (第33号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">吉原 ゆかり</div><div>「コリオレイナス」試論―病・カニバリズム―</div>
+                                <div class="font-semibold">山内 暁彦</div><div>‘Vain, Idle, Visionary Thoughts’―A Modest Propsalにおけるスウィフトの風刺―</div>
+                                <div class="font-semibold">Tomonori Kiyota</div><div>Totalizing the Particular: Dr. Johnson and the Eighteenth Century Public Sphere</div>
+                                <div class="font-semibold">清田 友則</div><div>フェミニストに勝利をもたらすための一戦略<i>!!</i></div>
+                                <div class="font-semibold">後藤 美映</div><div>二つの『ハイピリオン』をめぐるキーツの詩的創作の可能性</div>
+                                <div class="font-semibold">石井 有希子</div><div>「時」の視点から見る<i>Jude the Obscure</i></div>
+                                <div class="font-semibold">宮原 一成</div><div>proto-<i>Dubliners</i>におけるsymmetry</div>
+                                <div class="font-semibold">青井 格</div><div>Nathaniel Hawthorne―その新しい作家像を求めて―</div>
+                                <div class="font-semibold">大城 房美</div><div>Poeの短編における詩的テーマ―美女の死Ⅱ― ―肖像としての女性：第三者のナレーターによる構成―</div>
+                                <div class="font-semibold">竹内 勝徳</div><div><i>Pierre or, the Ambiguities</i>における「主」と「客」の関係</div>
+                                <div class="font-semibold">原口 遼</div><div>S・クレイン詩評釈 (1)―宗教に関する詩篇より―</div>
+                                <div class="font-semibold">Yasuko Sato</div><div>The Closure of <i>The Sound and the Fury</i> and the Retrospective Interplay of Section Four</div>
+                                <div class="font-semibold">吉田 潤司</div><div><i>The Sun Also Rises</i>論―語り手による共感形勢のプロセスとその意義をめぐって―</div>
+                                <div class="font-semibold">前田 譲治</div><div>Malamudの田園像と都市像の特質について</div>
+                                <div class="font-semibold">野仲 響子</div><div>シェークスピアの不定詞</div>
+                                <div class="font-semibold">荘口 美樹子</div><div>名詞句からの外置について</div>
+                                <div class="font-semibold">岩城 令子</div><div>挿入句についての一考察</div>
+                                <div class="font-semibold">迫 由紀子</div><div>副詞の動詞修飾に関する一考察</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-32" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1989年 (第32号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">吉原 ゆかり</div><div>“To offer up a weak, poor, innocent lamb”―「マクベス」における儀礼 (ritual) と犠牲としてのマクベス―</div>
+                                <div class="font-semibold">山内 暁彦</div><div>『桶物語』における風刺 ―その難解さとスウィフトの意図―</div>
+                                <div class="font-semibold">後藤 美映</div><div><i>Ode on a Grecian Urn</i> 試論</div>
+                                <div class="font-semibold">池園 宏</div><div><i>The Mill on the Floss</i> 試論 ―Maggie Tulliver の行動規範について―</div>
+                                <div class="font-semibold">宮原 一成</div><div>ルイス＝キャロルのノンセンス構築法―non から yes への転換―</div>
+                                <div class="font-semibold">中島 久代</div><div>Hugh MacDiarmid の初期の抒情詩―感傷性からの脱皮の試み―</div>
+                                <div class="font-semibold">青井 格</div><div><i>The Scarlet Letter</i> ―「虚無」への道程―</div>
+                                <div class="font-semibold">大城 房美</div><div>Poe の短篇における詩的テーマ ―美女の死―</div>
+                                <div class="font-semibold">原口 遼</div><div>ディキンスン詩評釈(1)―自然、詩作、狂気、死についての詩篇より―</div>
+                                <div class="font-semibold">Yasuko Sato</div><div>Language and Characterization in Faulkner's Depiction of Miss Jenny</div>
+                                <div class="font-semibold">内田 智子</div><div><i>Absalom, Absalom!</i> のコミュニティ</div>
+                                <div class="font-semibold">前田 譲治</div><div><i>The Natural</i> における Malamud の Jewish Consciousness について</div>
+                                <div class="font-semibold">荘口 美樹子</div><div>左方転位についての一考察</div>
+                                <div class="font-semibold">野仲 響子</div><div>シェークスピアにおける動名詞</div>
+                                <div class="font-semibold">迫 由紀子</div><div>談話における Adverb Preposing の意味と機能</div>
+                                <div class="font-semibold">家入 葉子</div><div>『カンタベリ物語』における figurative negation について</div>
+                                <div class="font-semibold">C. Nogami</div><div>A little Study of “Split - infinitive”</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-31" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1988年 (第31号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">吉原 ゆかり</div><div><i>Macbeth</i> 試論 ―暴力とセクシュアリティ―</div>
+                                <div class="font-semibold">中島 久代</div><div>John Donne と Wit ―ウィットの歴史的変遷とダンのウィット―</div>
+                                <div class="font-semibold">山内 暁彦</div><div>『ガリヴァ旅行記』における語り手としてのガリヴァについて</div>
+                                <div class="font-semibold">宮原 一成</div><div>ノンセンスが人間の中に占める位置―Lewis Carroll の作品を通して―</div>
+                                <div class="font-semibold">大城 房美</div><div>詩人としての Poe ―Poe 詩論の一考察―</div>
+                                <div class="font-semibold">宮田 優子</div><div>Emily Dickinson 試論 ―愛の詩における言語表現について―</div>
+                                <div class="font-semibold">佐藤 康子</div><div>ニンフを追いかける牧神―Faulkner の初期作品に見られるある原理的イメージ―</div>
+                                <div class="font-semibold">内田 智子</div><div><i>As I Lay Dying</i> 試論―「言葉」と「行為」の分裂のテーマについて―</div>
+                                <div class="font-semibold">前田 譲治</div><div>Malamud の <i>A New Life</i> における創作姿勢について</div>
+                                <div class="font-semibold">清田 友則</div><div>『ハーツォグ』における狂気としての＜思想＞</div>
+                                <div class="font-semibold">青井 格</div><div>“A Perfect Day for Bananafish” ―鏡の国の Seymour ―</div>
+                                <div class="font-semibold">古賀 恵介</div><div>冠詞論序説―指示構造から見たその基本的特質</div>
+                                <div class="font-semibold">赤司 裕子</div><div>The Utilization of Background Knowledge in L2 Reading</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-30" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1987年 (第30号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">中島 久代</div><div>ダンの空間―ドラマ的技巧とイメジャリーをめぐって―</div>
+                                <div class="font-semibold">髙本 孝子</div><div><i>The Mill on the Floss</i>におけるGeorge Eliotの義務感</div>
+                                <div class="font-semibold">松田 雅子</div><div>The Woodlanders―牧歌とペシミズム―</div>
+                                <div class="font-semibold">木原 謙一</div><div>Byzantiumと神性世界―イエイツの芸術的葛藤―</div>
+                                <div class="font-semibold">宮田 優子</div><div>エミリ・ディキンスンの詩における子供</div>
+                                <div class="font-semibold">佐藤 泰子</div><div><i>As I Lay Dying</i>における性の永続性のモチーフについて―AddieとDewey Dellを中心に―</div>
+                                <div class="font-semibold">内田 智子</div><div><i>Light in August</i>論―南部の過去と人間の生き方―</div>
+                                <div class="font-semibold">前田 譲治</div><div>Frank Alpineの内的変身の特質について―<i>The Assistant</i>の一解釈―</div>
+                                <div class="font-semibold">徳永 信子</div><div>使役動詞と進行形</div>
+                                <div class="font-semibold">古賀 恵介</div><div>AlreadyとYet―その対極性の本質―</div>
+                                <div class="font-semibold">家入 葉子</div><div>否定文における‘the likeliest reading’</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-29" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1986年 (第29号) <span class="text-xl text-gray-600 font-medium">大江三郎先生追悼号</span></h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">伊藤 健一</div><div>Structural Significance of Fortune and Nature in <i>As You Like It</i></div>
+                                <div class="font-semibold">原口 行雄</div><div>The Use of Dialect in Thomas Hardy's First Four Novels with Special Reference to the Pronouns</div>
+                                <div class="font-semibold">松田 雅子</div><div><i>The Return of the Native</i> ―その劇的小説としての特質―</div>
+                                <div class="font-semibold">木原 謙一</div><div>イエイツの薄明の釣り人 ―前期における詩作衝動をめぐって―</div>
+                                <div class="font-semibold">宮田 優子</div><div>Emily Dickinson 詩における死の Imagery とその意味について</div>
+                                <div class="font-semibold">中原 理江</div><div><i>Pudd'nhead Wilson</i> における人間劇の解釈</div>
+                                <div class="font-semibold">徳永 信子</div><div>[be+ing] と [～テイル]</div>
+                                <div class="font-semibold">山田 仁子</div><div>代名詞と話者の認識</div>
+                                <div class="font-semibold">大津 隆広</div><div>発話行為論からみた間接話法</div>
+                                <div class="font-semibold">西岡 宣明</div><div>英語の間接目的語と topic</div>
+                                <div class="font-semibold">平井 昭徳</div><div>アイロニー素描 ―丁寧さとの関わりから―</div>
+                                <div class="font-semibold">松瀬 憲司</div><div>『カンタベリ物語』の For to 不定詞について</div>
+                                <div class="font-semibold">古賀 恵介</div><div>英語完了相試論</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-28" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1985年 (第28号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">松田 雅子</div><div><i>Romeo and Juliet</i> 試論 ―象徴的要素の解釈について―</div>
+                                <div class="font-semibold">伊藤 健一</div><div>『テンペスト』のヴィジョン ―シェイクスピアとヒューマニズム―</div>
+                                <div class="font-semibold">中村 ひろ子</div><div>William Blake: <i>The Mental Traveller</i> ―二つの抱擁―</div>
+                                <div class="font-semibold">高本 孝子</div><div>「服従の神聖」と「反逆の神聖」のはざま―<i>Romola</i> の主題とその問題点―</div>
+                                <div class="font-semibold">原口 行雄</div><div>A Study of the Wessex Dialect in Hardy's Novels</div>
+                                <div class="font-semibold">坂本 正雄</div><div>A Distorting Mirror A Study of Egotism in <i>Mrs. Dalloway</i></div>
+                                <div class="font-semibold">吉本 治郎</div><div>ロレンスの自然観</div>
+                                <div class="font-semibold">高橋 勤</div><div>二重性(デュアリティ)の変奏 ―『ピエール』論</div>
+                                <div class="font-semibold">宮田 優子</div><div>Emily Dickinson's Ambivalent View of Nature</div>
+                                <div class="font-semibold">中原 理江</div><div><i>Adventures of Huckleberry Finn</i> ―<i>Huck </i>の自己覚醒―</div>
+                                <div class="font-semibold">酒井 三千穂</div><div>“The Bear” における Faulkner の文体</div>
+                                <div class="font-semibold">伊鹿倉 誠</div><div>『山に登りて告げよ』 ―二元性の展開―</div>
+                                <div class="font-semibold">樋口 万里子</div><div>間接疑問文導入の <i>If</i> と <i>Whether</i></div>
+                                <div class="font-semibold">武方 壮一</div><div>Theme-Rheme 構造からみた There 構文</div>
+                                <div class="font-semibold">山田 仁子</div><div>談話における WH-cleft</div>
+                                <div class="font-semibold">平井 昭徳</div><div>Some Aspects of Irony</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-27" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1984年 (第27号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">中村 ひろ子</div><div>Orc energy の「対立」から「円環」へ</div>
+                                <div class="font-semibold">原口 行雄</div><div>Hardy's <i>Tess of the d'Urbervilles</i> の研究 ―a woman of tragic fate―</div>
+                                <div class="font-semibold">城島 秀子</div><div><i>Under Western Eyes</i> における言葉の問題</div>
+                                <div class="font-semibold">坂本 正雄</div><div>A Distorting Mirror A Study of Egotism in <i>Mrs. Dalloway</i></div>
+                                <div class="font-semibold">安藤 裕介</div><div>英語における定冠詞の使用原理とその心理言語構造モデル</div>
+                                <div class="font-semibold">江口 巧</div><div>名詞的動名詞と動詞的動名詞について ―意味的観点から―</div>
+                                <div class="font-semibold">樋口 万里子</div><div>隠喩と非隠喩</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-26" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1983年 (第26号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">伊藤 健一</div><div>『冬物語』と聖書的ヴィジョン ―文学と神学の邂逅―</div>
+                                <div class="font-semibold">岩本 誠治</div><div>On the Similies and Metaphors in <i>Shakespear's Sonnets</i> with Special Reference to his <i>Love</i></div>
+                                <div class="font-semibold">中村 ひろ子</div><div>『無垢の歌』 ―その「生」の本質と「夜」の諸相について―</div>
+                                <div class="font-semibold">大野 龍浩</div><div>Mrs. Gaskell: <i>Ruth</i> 研究 ―Seduced Women の救い―</div>
+                                <div class="font-semibold">城島 秀子</div><div>『密偵』における都市と人間</div>
+                                <div class="font-semibold">吉村 治郎</div><div>ロレンス『恋する女たち』</div>
+                                <div class="font-semibold">高橋 勤</div><div>『白鯨』の海 ―その嵐と凪―</div>
+                                <div class="font-semibold">大橋 浩</div><div>繰り返しによる皮肉表現に関する一考察</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-25" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1982年 (第25号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">坂本 育生</div><div>Almost と Nearly の語法の相違について</div>
+                                <div class="font-semibold">大野 龍浩</div><div>ギャスケル『メアリー・バートン』の一考察―人間の善性への信頼について―</div>
+                                <div class="font-semibold">崎村 耕二</div><div>『二都物語』のシドニー・カートンについて</div>
+                                <div class="font-semibold">城島 秀子</div><div>ジョウゼフ・コンラッド：『闇の奥』 ―人間性の闇の問題―</div>
+                                <div class="font-semibold">高尾 浩二</div><div>『リア王』の道化 ―リアの悲劇と道化の役割―</div>
+                                <div class="font-semibold">酒井 三千穂</div><div>フォークナー『八月の光』 ―統一性と全体像―</div>
+                                <div class="font-semibold">田江 安廣</div><div>ホーソーンの二つの短編 ―伝記的視点から―</div>
+                                <div class="font-semibold">高橋 勤</div><div>クレインにおける「家」からの疎外 ―『マギー』を中心として―</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-24" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1981年 (第24号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">大野 龍浩</div><div>ギャスケル『従妹フィリス』の一考察 ―青春の日の恋―</div>
+                                <div class="font-semibold">織田 康江</div><div>J. ジョイス：『若き日の芸術家の肖像』 ―芸術入会の動機付け―</div>
+                                <div class="font-semibold">熊本 千明</div><div>‘Should’の基本的意味について ―間接発話行為の観点から―</div>
+                                <div class="font-semibold">坂本 育生</div><div>平叙文における語順転倒について―focus, weight, emphasis との関係―</div>
+                                <div class="font-semibold">坂本 正雄</div><div>D. H. Lawrence, <i>Lady Chatterley's Lover</i> ―構成と意味―</div>
+                                <div class="font-semibold">田江 安廣</div><div>ナサニエル・ホーソーンの四つの短編―孤立というテーマを中心に―</div>
+                                <div class="font-semibold">因 京子</div><div>法助動詞に反映される話し手の主観性―must, may, can に関して―</div>
+                                <div class="font-semibold">徳永 信子</div><div>使役動詞 make, get, have の意味</div>
+                                <div class="font-semibold">林 瑞子</div><div>進行形の意味と用法に関して</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-23" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1980年 (第23号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">因 京子</div><div>May と Can の意味と用法に関する一考察</div>
+                                <div class="font-semibold">林 瑞子</div><div>進行形の非進行形的用法について</div>
+                                <div class="font-semibold">徳永 信子</div><div>使役構文の型と意味 ―have と get の意味と用法―</div>
+                                <div class="font-semibold">坂本 正雄</div><div>D. H. ロレンス『息子と恋人』 ―主題と性格描写―</div>
+                                <div class="font-semibold">西元 宜子</div><div>『ジェイコブの部屋』 ―主題と方法―</div>
+                                <div class="font-semibold">熊本 千明</div><div>日・英語の「依頼」に関する動詞の意味的分析</div>
+                                <div class="font-semibold">山口 高正</div><div>『マンスフィールド』 ―作品を流れる悲しみ―</div>
+                                <div class="font-semibold">城島 秀子</div><div>Joseph Conrad: 「闇の奥」 ―その内的主題―</div>
+                                <div class="font-semibold">中司 雅謙</div><div>Bradley 以降の Hamlet 像 ―二十世紀の <i>Hamlet</i> 批評の流れ―</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-22" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1979年 (第22号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">澄川 比佐子</div><div>話法における時制と視点</div>
+                                <div class="font-semibold">中村 芳久</div><div>時間意識と英語の時制・相 ―現在完了形の意味を中心に―</div>
+                                <div class="font-semibold">高尾 浩二</div><div>『リア王』 ―視点の問題―</div>
+                                <div class="font-semibold">宮崎 充保</div><div>直喩表現の一考案</div>
+                                <div class="font-semibold">阿部 正敏</div><div>無垢なる人間の状況 ―『失楽園』における人間像について―</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-21" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1978年 (第21号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">阿部 正敏</div><div>『失楽園』の光と闇</div>
+                                <div class="font-semibold">池田 栄一</div><div>薔薇と十字架の間で ―イエイツの初期の世界―</div>
+                                <div class="font-semibold">池田 恵美子</div><div>日本語の間接要請文（Indirect Directives）について</div>
+                                <div class="font-semibold">太田 一昭</div><div><i>Richard Ⅲ </i> 一幕二場 Richard の Anne 求愛について</div>
+                                <div class="font-semibold">小谷 耕二</div><div>William Faulker: <i>Light in August</i> ―自由と疎外―</div>
+                                <div class="font-semibold">中野 信子</div><div>Margaret Drabble: <i>The Waterfall</i> ―愛の黙示―</div>
+                                <div class="font-semibold">中村 芳久</div><div>不定詞の「実現度」</div>
+                                <div class="font-semibold">宮地 信弘</div><div>ナルシストの夢 ―John Donne における自己と他者―</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-20" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1977年 (第20号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">池田 栄一</div><div>仮面の告白 ―T. S. Eliot のペルソナについて―</div>
+                                <div class="font-semibold">井上 一郎</div><div>William Faulkner: <i>Light in August</i> ―Joe Christmas と旧約びと達―</div>
+                                <div class="font-semibold">太田 一昭</div><div>マクベスの変貌 ―野心から虚無へ―</div>
+                                <div class="font-semibold">小谷 耕二</div><div>William Faulkner: <i>Absalom, Absalom!</i> ―その構成と意味について―</div>
+                                <div class="font-semibold">中村 芳久</div><div>メタファーの同定と解法について ―形式言語理論に基づくアプローチの限界から―</div>
+                                <div class="font-semibold">村里 好俊</div><div>ヴィーナスの変貌 ―『ヴィーナスとアドゥニス』一考察―</div>
+                                <div class="font-semibold">水田 陽子</div><div>シェイクスピア劇に於る悪の認識について ―四大悲劇及び『尺には尺を』を中心にして―</div>
+                                <div class="font-semibold">水田 陽子</div><div>『響きと怒り』 ―シェイクスピア劇との相関性について―</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-19" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1976年 (第19号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">半田 拓也</div><div>初期の Saul Bellow: <i>Dangling Man </i>と <i>The Victim</i></div>
+                                <div class="font-semibold">池田 栄一</div><div>T. S. エリオット『大聖堂の殺人』 ―Martydom の意義について―</div>
+                                <div class="font-semibold">中野 信子</div><div>E. M. Forster の自然の観念の特質について</div>
+                                <div class="font-semibold">村里 好俊</div><div>愛の調和の世界 ―『アモレッティ』一考察―</div>
+                                <div class="font-semibold">山口 高正</div><div>George Orwell の反ユートピア ―権力とその人間性への影響―</div>
+                                <div class="font-semibold">池田 恵美子</div><div>進行形について―特に when, while 節を含む文における使用を中心に―</div>
+                                <div class="font-semibold">中村 芳久</div><div>『べーオウルフ』とメタファー―英詩におけるメタファーの一考察―</div>
+                                <div class="font-semibold">野島 啓一</div><div>意図性の明示的表現をめぐって</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-18" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1975年 (第18号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">岡崎 薫</div><div>『使老たち』における形式と内容の芸術的統一と視点</div>
+                                <div class="font-semibold">重松 隆矣</div><div><i>The Shadow Line</i> 覚書 ―経験と虚構のあいだ―</div>
+                                <div class="font-semibold">水田 陽子</div><div>『マクベス』論考 ―時間の意識と思想について―</div>
+                                <div class="font-semibold">村里 好俊</div><div>愛の虚構 ―『アストロフィルとステラ』一考察―</div>
+                                <div class="font-semibold">金子 光茂</div><div>Hawthorne: <i>The Marble Faun</i>―奈落を垣間見た人間の心の実相―</div>
+                                <div class="font-semibold">野島 啓一</div><div>『意図性の明示的表現をめぐるひとつの問題』 ―意味分析への関数概念の応用―</div>
+                                <div class="font-semibold">川瀬 義清</div><div>HAVE を含む使役的構文と受身的構文</div>
+                                <div class="font-semibold">大庭 幸男</div><div>進行形になりうる動詞の特性</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-17" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1974年 (第17号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">井上 一郎</div><div>フォークナー「黒衣の道化師」 ―神の詐欺師性について―</div>
+                                <div class="font-semibold">金子 光茂</div><div>Hawthorne: <i>The House of the Seven Gables</i> ―闇から光へ―</div>
+                                <div class="font-semibold">藤内 まり子</div><div><i>The Scarlet Letter </i>における Chillingworth の役割 ―Hawthorne 的「悪魔」に関する一考察―</div>
+                                <div class="font-semibold">馬塲 弘利</div><div>＜緑の新世界＞ ―『偉大なるギャッビー』の世界―</div>
+                                <div class="font-semibold">徳見 道夫</div><div>『ハムレット』 ―死との格闘―</div>
+                                <div class="font-semibold">馬本 誠也</div><div>D. H. ロレンスと『息子と恋人』 ―Being the Sons of Mothers―</div>
+                                <div class="font-semibold">水田 陽子</div><div>『マクベス』小論 ―歴史と実存―</div>
+                                <div class="font-semibold">此枝 洋子</div><div>CAUSATIVE の意味と構造</div>
+                                <div class="font-semibold">高島 直樹</div><div>―Agent 考―</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-16" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1973年 (第16号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">水田 陽子</div><div>『マクベス』 ―犯罪心理学及び精神分析的考察―</div>
+                                <div class="font-semibold">植松 芳幸</div><div>『日はまた昇る』と宗教性</div>
+                                <div class="font-semibold">馬本 誠也</div><div>グレアム・グリーン『権力と栄光』 ―罪と恩寵―</div>
+                                <div class="font-semibold">野島 啓一</div><div>『程度表現と前提』</div>
+                                <div class="font-semibold">水田 陽子</div><div>神話批評の一つの試み</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-15" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1972年 (第15号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">井上 一郎</div><div><i>Light in August </i>の内的世界</div>
+                                <div class="font-semibold">宮内 佐和子</div><div>Hemingway: <i>In Our Time</i> の主題と構成</div>
+                                <div class="font-semibold">山内 正一</div><div>John Keats: <i>Hyperion</i> の断片性について</div>
+                                <div class="font-semibold">森山 宣彦</div><div>An Interpretation of “The Burial of the Dead” in <i>The Waste Land</i> by T. S. Eliot</div>
+                                <div class="font-semibold">木下 善貞</div><div>ジェイムス・ジョイス『若き日の芸術家の肖像』 ―死と再生―</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-14" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1971年 (第14号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">江崎 義彦</div><div>An Essay on John Keats's <i>Lamia</i> ―Lycius の飛翔と死の内実―</div>
+                                <div class="font-semibold">江本 美津</div><div>Mrs. Dalloway ―plunge, throw について―</div>
+                                <div class="font-semibold">富田 禮子</div><div>関係詞構文の線的順序とそれが表現する時間的順序</div>
+                                <div class="font-semibold">植松 芳幸</div><div>Hemingway: 初期短篇の性格について―<i>In Our Time</i> を中心にして―</div>
+                                <div class="font-semibold">西原 恵子</div><div>Truman Capote: <i>Breakfast at Tiffany's</i> ―この作品の占める位置及び果す役割について―</div>
+                                <div class="font-semibold">馬塲 弘利</div><div>F. Scott Fitzgerald: <i>This Side of Paradise</i> 論</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-13" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1970年 (第13号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">坂本 武</div><div>Understanding of <i>A Sentimental Journey</i></div>
+                                <div class="font-semibold">新村 昭雄</div><div>William Faulkner: <i>Light in August</i>論 ―Joe Christmasの死―</div>
+                                <div class="font-semibold">浜咲 誠</div><div>Macbeth: その存在の内実―“Prophetic Greeting”との関連に於いて―</div>
+                                <div class="font-semibold">山崎 和夫</div><div>The Subjunctive Present in American English</div>
+                                <div class="font-semibold">田中 啓介</div><div>Truman Capote: <i>The Grass Harp</i> ―その“tree house”の意味を中心に―</div>
+                                <div class="font-semibold">初井 貞子</div><div>W.Wordsworthに於ける一詩形式―外的経験から内的経験への移向―</div>
+                                <div class="font-semibold">山口 一誠</div><div>―迷走から覚醒へ― <i>Pride and Prejudice</i>の主題と方法</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-12" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1969年 (第12号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">飯田 武郎</div><div>“The Scholar-Gipsy”考</div>
+                                <div class="font-semibold">池田 成子</div><div>Hamletと漱石の『行人』の一郎の類似</div>
+                                <div class="font-semibold">上野 征一郎</div><div>『楡の木陰の欲望』にみるO'Neillの本質</div>
+                                <div class="font-semibold">小田 正美</div><div><i>The Catcher in the Rye</i> ―ある戦後少年の｢開眼｣？―</div>
+                                <div class="font-semibold">園田 健二</div><div><i>The House of the Seven Gables</i>と民主主義</div>
+                                <div class="font-semibold">高橋 鍾</div><div><i>Anthony and Cleopatra</i>： The Dissipation of Life</div>
+                                <div class="font-semibold">辻 武男</div><div>James Joyce： Exiles論 ―無常への反逆―</div>
+                                <div class="font-semibold">平野 美帆</div><div>エミリー・ディキンスンに見る近代性</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-11" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1968年 (第11号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">神崎 尚士</div><div>Othello: His Dark Side</div>
+                                <div class="font-semibold">友田 雅子</div><div><i>The Moths or The Waves</i></div>
+                                <div class="font-semibold">中村 嘉男</div><div>『若き日の芸術家の肖像』 ―「青年」ステイヴン・ダグラス―</div>
+                                <div class="font-semibold">安河内 英光</div><div>Sherwood Anderson's "Death in the Woods"―生命の連帯について―</div>
+                                <div class="font-semibold">重松 隆矣</div><div>The Structure of <i>Nostromo</i></div>
+                            </div>
+                        </div>
+
+                        <div id="issue-10" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1967年(2) (第10号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">井上 明子</div><div>The Binary Opposition in Distinctive Feature Phonology</div>
+                                <div class="font-semibold">岡 紘一郎</div><div>Shakespearの史劇における王位観</div>
+                                <div class="font-semibold">大田垣 正義</div><div>Formal ‘it’ の歴史的考察 ―その２</div>
+                                <div class="font-semibold">坂本 肇</div><div>ヴァージニア・ウルフ論―ヴァージニア・ウルフにおける個人の問題―</div>
+                                <div class="font-semibold">杉山 隆一</div><div>Hemingwayに見られるFunction Word <i>There</i>構文</div>
+                                <div class="font-semibold">田吹 長彦</div><div><i>Murder in the Cathedral</i>に於けるThomas Becket のMartydomとWheel Imageについて</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-09" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1967年(1) (第9号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">大田垣 正義</div><div>Formal ‘it’ の歴史的考察 ―序説</div>
+                                <div class="font-semibold">岡 紘一郎</div><div>Falstaff小論</div>
+                                <div class="font-semibold">大本 秀子</div><div>Yeats: 神と獣の間―後期の詩に於けるテーマの二面性について―</div>
+                                <div class="font-semibold">黒田 正子</div><div>D.H.Lawrence: The Meaning of Sexual Description</div>
+                                <div class="font-semibold">塩塚 広子</div><div>Ing形によるFree Adjunct ―アメリカ英語を中心として</div>
+                                <div class="font-semibold">田吹 長彦</div><div><i>Four Quartets</i>に於ける時間と救い</div>
+                                <div class="font-semibold">中村 須美子</div><div>T.S.Eliotにおける愛のテーマ ―詩劇を中心に―</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-08" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1966年(2) (第8号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">古屋 靖二</div><div>TroilusとCressida ―その愛の世界―</div>
+                                <div class="font-semibold">廣田 稔</div><div>Charlotte Bronteに見る独立自尊の精神</div>
+                                <div class="font-semibold">森 みどり</div><div><i>Mrs. Dalloway</i>に見られるImagery</div>
+                                <div class="font-semibold">村井 泰彦</div><div>Hemingwayの人生観と創作理論 (その一)</div>
+                                <div class="font-semibold">菅沼 惇</div><div>分詞構文論 分詞構文転成への要因</div>
+                                <div class="font-semibold">田島 松二</div><div>Langlandに於けるVerbals (1) ―分詞について―</div>
+                                <div class="font-semibold">富田 党夫</div><div>OE関係詞序説 ―Beowulfの場合―</div>
+                                <div class="font-semibold">吉崎 泰博</div><div>ジョー・クリスマスの救い ―フォークナーの「八月の光」論―</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-07" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1966年(1) (第7号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">古屋 靖二</div><div><i>Othello</i> ―恋愛悲劇としての試論的考察</div>
+                                <div class="font-semibold">廣田 稔</div><div>HeathcliffとCatherine ―その心理的展開</div>
+                                <div class="font-semibold">井戸 修</div><div>Harrisの音素分析とSuprasegmental Phonemeについて</div>
+                                <div class="font-semibold">片岡 章</div><div>King Learの再生</div>
+                                <div class="font-semibold">小川 浩</div><div>The Subjunctive Mood in Object Clauses in Chaucer</div>
+                                <div class="font-semibold">横山 恒子</div><div>Some Notes on Emma</div>
+                                <div class="font-semibold">吉崎 泰博</div><div>｢ヨブ記｣の芸術性再考</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-06" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1965年 (第6号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">磯部 薫</div><div>英詩に於けるSound Symbolism</div>
+                                <div class="font-semibold">笠原 正夫</div><div>Shakespeare's Subjective Mood and Modal Auxiliary</div>
+                                <div class="font-semibold">勝又 喜久雄</div><div>D.H. Lawrenceの生命主義</div>
+                                <div class="font-semibold">金子 宏</div><div>‘To the Lighthouse‘について ―二つの現実の対立と結合―</div>
+                                <div class="font-semibold">杉山 隆一</div><div><i>The Return of the Native</i>における悲劇性についての一考察</div>
+                                <div class="font-semibold">園井 英秀</div><div><i>Samson Agonistes</i> における劇的アイロニーの諸問題</div>
+                                <div class="font-semibold">田島 松二</div><div>Shakespeareに於ける分詞構文について―特に初期・中期作品に関して―</div>
+                                <div class="font-semibold">富田 党夫</div><div>‘The Canterbury Tales‘の関係詞について (その一)</div>
+                                <div class="font-semibold">山中 光義</div><div>Venus and Adonis ―愛と死のdramatic exercise</div>
+                                <div class="font-semibold">渡辺 真砂</div><div>‘The Pearl‘と‘The Old Man And The Sea‘</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-05" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1964年 (第5号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">石川 正文</div><div>『虹』 『恋する女達』 ―自我の闘争―</div>
+                                <div class="font-semibold">磯部 薫</div><div>Shakespeare as a Word-Musician</div>
+                                <div class="font-semibold">内野 孝子</div><div><i>Dubliners</i> ―荒廃と蘇生―</div>
+                                <div class="font-semibold">蛯原 啓</div><div>The Light Symbolism in Samson Agonites</div>
+                                <div class="font-semibold">園井 英秀</div><div>Scobie の場合 ― salvation の問題―</div>
+                                <div class="font-semibold">真鍋 誠</div><div>E.M.Forsterの小説における人間関係</div>
+                                <div class="font-semibold">山口 邦夫</div><div>悲劇小説に見るハーディーの人間観</div>
+                                <div class="font-semibold">山中 光義</div><div>Matthew Arnoldの文学定義と‘hellenism’</div>
+                                <div class="font-semibold">宮原 文夫</div><div>Aspect考</div>
+                                <div class="font-semibold">村上 隆太</div><div>ME /o:/ , /u:/ のLate ME, Early ModE, ModEにおける変化について</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-04" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1963年 (第4号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">瓜生 善美</div><div><i>Hamlet</i>論のための覚書 ―(復習の神話とロマ書)―</div>
+                                <div class="font-semibold">蛯原 啓</div><div>Falstaff覚書 ―Gad's Hill及びShrewsburyの戦―</div>
+                                <div class="font-semibold">大屋 冨久代</div><div>A Passage to India ―人間関係について―</div>
+                                <div class="font-semibold">三井 徹</div><div>“Willie's Lady”の解釈</div>
+                                <div class="font-semibold">吉田 徹夫</div><div>WHAT IS THE DARKNESS? ―“Heart of Darkness”について―</div>
+                                <div class="font-semibold">工藤 澪子</div><div>音韻に関する一研究 ―チョウサーの英語―</div>
+                                <div class="font-semibold">添田 裕</div><div>Pleonastic Genitiveについて</div>
+                                <div class="font-semibold">真鍋 和瑞</div><div>OEからMEへの転換期における属格語尾の変遷について</div>
+                                <div class="font-semibold">宮原 文夫</div><div>後期ME及び初期ModEの関係代名詞 that, which, who―その散文に於ける分布について―</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-03" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1962年 (第3号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">富田 党夫</div><div>関係副詞二題</div>
+                                <div class="font-semibold">真鍋 和瑞</div><div>Have (to) と Have got (to)について</div>
+                                <div class="font-semibold">井上 純江</div><div>イエイツの詩のイメージ</div>
+                                <div class="font-semibold">蛯原 啓</div><div>The Tempest ― Passion から Reason へ―</div>
+                                <div class="font-semibold">工藤 澪子</div><div>ChaucerのTroilus and Criseyde</div>
+                                <div class="font-semibold">野村 直壮</div><div>Psychopathologyから見たQuentin</div>
+                                <div class="font-semibold">丸田 敬</div><div>Shakespeareの女性の特質とその意味についての試論的考察―悲劇を中心として―</div>
+                                <div class="font-semibold">丸田 裕子</div><div>「嵐ケ丘」 ―価値と反価値の均衡について</div>
+                                <div class="font-semibold">松尾 保男</div><div>The Spanish Tragedy試論</div>
+                                <div class="font-semibold">石井 君孝</div><div>モラリストとしてのFieldingについて</div>
+                                <div class="font-semibold">三井 徹</div><div>Balladび音楽性</div>
+                                <div class="font-semibold">安徳 軍一</div><div>―S.T.Coleridge― 詩的想像力の命脈とその展開</div>
+                                <div class="font-semibold">高月 麗子</div><div>Browingの「劇的独白」: Andrea del Sarto</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-02" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1961年 (第2号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">小池 政雄</div><div>二人の批評家 ―ジョンソン博士とコウルリヂの場合―</div>
+                                <div class="font-semibold">内田 義郎</div><div>PaterのGoethe関心の意味 ―‘Winckelmenn’を中心とするPater精神世界の考察の第一部</div>
+                                <div class="font-semibold">小田 稔</div><div>Hardy研究 ―科学性をめぐって―</div>
+                                <div class="font-semibold">守口 三郎</div><div>イェイツの詩</div>
+                                <div class="font-semibold">阿波 保喬</div><div>G.Eliotの作品の方言に関する二、三の考察</div>
+                                <div class="font-semibold">木下 浩利</div><div>「分詞構文」</div>
+                            </div>
+                        </div>
+
+                        <div id="issue-01" class="bg-white p-8 rounded-lg border border-gray-200 scroll-mt-24">
+                            <h4 class="text-3xl font-bold mb-6 text-red-800">1960年 (第1号)</h4>
+                            <div class="space-y-4 article-grid">
+                                <div class="font-semibold">鬼塚 敬一</div><div>「John Donneの“Songs and Sonets”に於けるドラマ的効果をめぐって」</div>
+                                <div class="font-semibold">小池 政雄</div><div>「老水夫の歌」現行版に於ける散文註について</div>
+                                <div class="font-semibold">阿波 保喬</div><div>「アダム・ビード」について</div>
+                                <div class="font-semibold">小田 稔</div><div>詩に於けるHardyの自然</div>
+                                <div class="font-semibold">守口 三郎</div><div>イエイツについて</div>
+                                <div class="font-semibold">永冨 豊秀</div><div>ME動名詞の一考察 ～主として態について～</div>
+                                <div class="font-semibold">富田 党夫</div><div>“On Relative Adverbs ‘When’ and ‘Where’ in Modern English”</div>
+                                <div class="font-semibold">神田 弘慶</div><div>動詞の表象と相</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-gray-900 text-gray-400">
+        <div class="container mx-auto px-6 py-12 text-center">
+            <p class="text-lg font-bold text-white mb-2">九州大学文学部 英語学・英文学研究室</p>
+            <p>〒819-0395 福岡市西区元岡744</p>
+            <div class="mt-8">
+                <a href="https://www.kyushu-u.ac.jp/" target="_blank" rel="noopener noreferrer" class="hover:text-white mx-4">九州大学</a>
+                <a href="https://www.lit.kyushu-u.ac.jp/" target="_blank" rel="noopener noreferrer" class="hover:text-white mx-4">九州大学文学部</a>
+            </div>
+            <p class="mt-8 text-sm text-gray-500">&copy; 2025 Department of English, Kyushu University. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
