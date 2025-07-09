@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>映画で知るアメリカ文学 その1 | 九州大学文学部 英語学・英文学研究室</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* カスタムスタイル */
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', 'Noto Sans JP', serif;
+        }
+
+        .essay-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- ヘッダー -->
+    <header id="header" class="bg-white/80 backdrop-blur-sm shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-wider">
+                <a href="index.html">ENGLISH | KYUSHU UNIV.</a>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#fields" class="nav-link">Fields</a>
+                <a href="essays.html" class="nav-link">Essays</a>
+                <a href="index.html#kyuei-kai" class="nav-link">Kyuei-kai</a>
+                <a href="index.html#faculty" class="nav-link">Faculty</a>
+                <a href="index.html#theses" class="nav-link">Academic Theses</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="focus:outline-none">
+                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- モバイルメニュー -->
+    <div id="mobile-menu" class="hidden md:hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-95 z-40 flex justify-center items-center text-white">
+        <button id="mobile-close-button" class="absolute top-6 right-6 text-2xl">&times;</button>
+        <div class="flex flex-col text-center space-y-8 text-2xl">
+             <a href="#about" class="mobile-nav-link">About</a>
+             <a href="#fields" class="mobile-nav-link">Fields</a>
+             <a href="#essays" class="mobile-nav-link">Essays</a>
+             <a href="#kyuei-kai" class="mobile-nav-link">Kyuei-kai</a>
+             <a href="#faculty" class="mobile-nav-link">Faculty</a>
+             <a href="#theses" class="mobile-nav-link">Academic Theses</a>
+        </div>
+    </div>
+
+
+    <main>
+        <article class="py-24 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="max-w-3xl mx-auto">
+                    <!-- エッセイヘッダー -->
+                    <header class="text-center mb-16">
+                        <p class="text-lg text-red-800 font-semibold mb-2">教員コラム</p>
+                        <h1 class="text-4xl md:text-5xl font-bold mb-4">映画で知るアメリカ文学　その1</h1>
+                        <p class="text-gray-500">2025年7月9日 | 執筆者: 高野 泰志 (教授)</p>
+                    </header>
+
+                    <!-- エッセイ本文 -->
+                    <div class="essay-content text-lg">
+                        <p>アメリカ文学を学び始めの方に向けて、まずは手軽に映画を見ることでアメリカ文学に親しんでもらおうと思い、このエッセイを書いてみました。もちろん映画を見たところで文学作品を知ることにはなりませんし、当然映画化するに際して様々な改変も加えてあります。ただあまり七面倒くさいことは言わずに、まずはどんな作品があるのかの雰囲気を知ってもらえればよいかなと思います。一応なんとなく文学史的な知識も得られるように、作品の書かれた年代順に（映画の作られた年代ではなく）紹介してみますので、興味のあるものが見つかればまずは映画を見てみてください。映画が面白いと思えば、ぜひもとになった作品を手にして、その先に進んでもらえればと思います。</p>
+
+                        <!-- 作品紹介 1 -->
+                        <div class="bg-gray-50 p-8 rounded-lg my-12 border border-gray-200">
+                            <h2 class="text-3xl font-bold mb-4">1. 『モヒカン族の最後』<br><span class="text-xl text-gray-600">(The Last of the Mohicans, 1826)</span></h2>
+                            <p>ジェイムズ・フェニモア・クーパー（James Fenimore Cooper）による「レザー・ストッキング物語」全5部作のひとつ。第一作の『開拓者たち』（The Pioneers）ではわき役であったナッティ・バンポーが人気を博し、この人物を主人公とした作品が書き続けられることになりました。バンポーはレザー・ストッキング、パスファインダー、ディア・スレイヤー、ホーク・アイなどと言うあだ名で呼ばれ、森に習熟した狩人であり戦士です。とりわけ人気が高かったのが『モヒカン族の最後』なのですが、これまで何度も映画化されてきて、西部劇の原型ともなったアメリカの文化的アイコンといえるでしょう。</p>
+                            <p>1909年には映画の父と呼ばれるデイヴィッド・W・グリフィスによって Leather Stocking という短編が作られ、1920年にもサイレント映画版が作られています。原作の複雑なあらすじを単純化するという、アダプテーションの基本がこのころから工夫されていたことがわかります。1936年版はジョージ・サイツ監督、ランドルフ・スコット主演の作品で、原作からはかなりの逸脱が見られますが、『モヒカン族の最後』のイメージをアメリカ人に植え付けることになった作品で非常によく知られています。</p>
+                            <p>ただ何よりみなさんにお勧めしたいのは、1992年のマイケル・マン監督版『ラスト・オブ・モヒカン』です。マンは『ヒート』や『コラテラル』『マイアミ・バイス』などの重厚なアクション映画で知られた監督ですが、ダニエル・デイ・ルイスを主役に据えたこの作品は、消えゆくネイティブアメリカンとアメリカの荒野を市場たっぷりに描き出した、ある意味原作以上に面白い作品です。正直なところ、原作は現在の目で見るとほとんど吉本新喜劇のようで真面目に書いているのか、ギャグなのか、判然としないようなエピソードがたっぷりなのですが、映画はアメリカの開拓時代を舞台にした冒険活劇でありながら、重厚な人間ドラマが描き出されています。アメリカの原型を見るという意味でも、ぜひ一度目にしてほしい名作です。</p>
+                        </div>
+
+                        <!-- 作品紹介 2 -->
+                        <div class="bg-gray-50 p-8 rounded-lg my-12 border border-gray-200">
+                            <h2 class="text-3xl font-bold mb-4">2. 『緋文字』<br><span class="text-xl text-gray-600">(The Scarlet Letter, 1850)</span></h2>
+                            <p>作者ナサニエル・ホーソーンは19世紀アメリカを代表する大作家ですが、『緋文字』は17世紀の植民地時代のボストンを舞台にし、姦通の罪を犯した人々を描く罪の物語です。おそらく次に紹介するハーマン・メルヴィルの『白鯨』と並んでアメリカ文学の最高傑作といってもよい作品でしょう。</p>
+                            <p>この作品も1911年版以来、10回以上映画化されています。比較的評価の高いヴィム・ヴェンダースによる西ドイツ映画などもありますが、ここではあえて1995年にハリウッドで映画化されたローランド・ジョフィ版を紹介しておきましょう。デミ・ムーア、ゲイリー・オールドマン、ロバート・デュヴァルを主人公とした大作ですが、公開されるやいなや、批評家にボロクソに言われまくった作品です。アメリカ文学研究者のほとんどの人は、この作品を耳にすると呪いと憎しみを込めて罵声を浴びせかけることでしょう。あまりにも原作を無茶苦茶に改変しまくって、作品にはまったく存在しないフェミニズム映画に仕立てようとした作品で、一瞬たりとも誉めたくなるような場面がありません。</p>
+                            <p>念のために言っておきますが、私個人は原作を改変することに否定的ではありません。文学研究者は作品を大事に思うあまり、ちょっとでも改変を加えられるとすぐに文句をつける人がいるのですが、映画製作者は別に文学研究者に忖度するために映画を作っているわけではありません。映画独自の面白さを追求したいと思っているのです。それにそもそもメディアが違っている以上、ある程度の改変は必要ですし、時代のコンテクストが変われば修正すべき個所もたくさん出てくるはずです。だからそういう改変のほうにむしろ製作者の独創性が浮かび上がってくるものなので、私にとってはむしろ同改変しているのかに興味を惹かれます。</p>
+                            <p>ただこの作品に関しては、まったくほめる気にならないのです。そもそも作品として全く面白くないだけでなく、このような改変をするのであればホーソーンの作品を原作にする必要がまるでないように見えるからで、いくら自分の作りたいオリジナルの作品像があるにせよ、最低限度原作に敬意を払う必要はあるだろうと思うのです。やはり原作を脚色する際には原作の持つ作品の核のようなものをしっかり捉えることが最低限度必要ではないでしょうか。</p>
+                            <p>とはいえ、ここまでボロクソに言われるとちょっと見てみたい気にはならないでしょうか？　今では幸いにして（？）この作品は配信されているサービスもなく、見るのが難しくなっているようですが、もしレンタル屋さんなどで見つけたら、ぜひ原作を読んだ後で見てみてください。映画のポンコツ具合を存分に味わえることでしょう。</p>
+                        </div>
+
+                        <!-- 作品紹介 3 -->
+                        <div class="bg-gray-50 p-8 rounded-lg my-12 border border-gray-200">
+                            <h2 class="text-3xl font-bold mb-4">3. 『白鯨』<br><span class="text-xl text-gray-600">(Moby-Dick, 1851)</span></h2>
+                            <p>言わずと知れたアメリカ文学最大の作品であり、子供用の文学全集などでもリライト版が収録されていることも多く、そういった形で触れてきた人も多いのではないでしょうか。オリジナルは全135章に及ぶ百科全書的な長大な作品です。子供向けのリライトでは、エイハブ船長が白いクジラを追いかける直線的な物語として構成されているでしょうが、メルヴィルの原作は話があちこちに寄り道しながら、時には「鯨学」について長々と語る証があったり、作中作というべきほかの話が組み込まれていたり、一向に鯨の追跡に向かう気配のないまま逸脱を続けます。そういう予備知識のないまま子供用のリライトをイメージしてこの作品を読み始めた読者は、たいてい捕鯨船ピーコッド号が出航する前に挫折してしまいます。</p>
+                            <p>この作品も1926年のサイレント映画版『海の野獣』をはじめとして、何度も映画化されていますが、もちろん原作の迷走をそのまま映画にしてしまうととても見られたものではなくなるでしょう。子供向けリライトと同様に、映画ではオリジナルのプロットだけを取り出して、鯨の追跡物語として再構成されることになります。なかでも有名なのは1956年のジョン・ヒューストン監督グレゴリー・ペック主演の『白鯨』でしょう。ヒューストンは文学に非常に造詣のある監督で、文学作品を好んで映画化する人でした。事情があってペンネームで脚本を書いたヘミングウェイの『殺人者』（ロバート・シオドマク監督）は、ヘミングウェイ作品の映画化の中で最も評価の高いもので、ヘミングウェイ自身が非常に満足していたそうです。また遺作となったジェイムズ・ジョイスの『死者たち』を映画化した『ザ・デッド/「ダブリン市民」より』は、実は私の卒論のテーマだったりします。</p>
+                            <p>『白鯨』も映画を見たからといって原作を知ることにはならないことに変わりはないのですが、この映画は映画独特のパワーにあふれていて、ぜひ単体としても楽しんでもらいたい作品です。</p>
+                        </div>
+
+                        <p>手短に作品をたくさん紹介しようと思っていたら、だらだらと長く書いてしまいました。いったんここで終えて、また次回に続きを書いて行こうと思います。オールコットの『若草物語』や『グレート・ギャツビー』『武器よさらば』『老人と海』『マルタの鷹』『怒りの葡萄』など、まだまだ紹介したい作品はたっぷりありますので。</p>
+                    </div>
+
+                    <!-- ページナビゲーション -->
+                    <div class="mt-16 pt-8 border-t border-gray-200 flex justify-between">
+                        <a href="essays.html" class="text-red-800 hover:underline">&larr; エッセイ一覧に戻る</a>
+                        <!-- <a href="#" class="text-red-800 hover:underline">次のエッセイへ &rarr;</a> -->
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-gray-900 text-gray-400">
+        <div class="container mx-auto px-6 py-12 text-center">
+            <p class="text-lg font-bold text-white mb-2">九州大学文学部 英語学・英文学研究室</p>
+            <p>〒819-0395 福岡市西区元岡744</p>
+            <div class="mt-8">
+                <a href="https://www.kyushu-u.ac.jp/" target="_blank" rel="noopener noreferrer" class="hover:text-white mx-4">九州大学</a>
+                <a href="https://www.lit.kyushu-u.ac.jp/" target="_blank" rel="noopener noreferrer" class="hover:text-white mx-4">九州大学文学部</a>
+            </div>
+            <p class="mt-8 text-sm text-gray-500">&copy; 2025 Department of English, Kyushu University. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

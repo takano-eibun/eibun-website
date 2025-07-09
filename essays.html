@@ -50,6 +50,20 @@
         </div>
     </header>
     
+    <!-- モバイルメニュー -->
+    <div id="mobile-menu" class="hidden md:hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-95 z-40 flex justify-center items-center text-white">
+        <button id="mobile-close-button" class="absolute top-6 right-6 text-2xl">&times;</button>
+        <div class="flex flex-col text-center space-y-8 text-2xl">
+             <a href="#about" class="mobile-nav-link">About</a>
+             <a href="#fields" class="mobile-nav-link">Fields</a>
+             <a href="#essays" class="mobile-nav-link">Essays</a>
+             <a href="#kyuei-kai" class="mobile-nav-link">Kyuei-kai</a>
+             <a href="#faculty" class="mobile-nav-link">Faculty</a>
+             <a href="#theses" class="mobile-nav-link">Academic Theses</a>
+        </div>
+    </div>
+
+
     <main>
         <section class="py-24 md:py-32">
             <div class="container mx-auto px-6">
@@ -86,8 +100,12 @@
                         <h3 class="text-2xl font-bold mt-1 group-hover:text-red-800 transition-colors">院生生活</h3>
                         <p class="text-gray-600 mt-2">執筆者: 未定</p>
                     </a>
+
+
+<style>
+/*
                     <!-- Essay Card 4 -->
-<!--                    <a href="#" class="group block">
+                    <a href="#" class="group block">
                         <div class="overflow-hidden rounded-lg">
                             <img src="https://placehold.co/600x400/8b5cf6/ffffff?text=Culture" alt="エッセイの画像" class="w-full h-60 object-cover transform group-hover:scale-105 transition-transform duration-500 ease-in-out">
                         </div>
@@ -96,7 +114,7 @@
                         <p class="text-gray-600 mt-2">執筆者: 高橋 大輔 (2020年卒)</p>
                     </a>
                     <!-- Essay Card 5 -->
-<!--                    <a href="#" class="group block">
+                    <a href="#" class="group block">
                         <div class="overflow-hidden rounded-lg">
                             <img src="https://placehold.co/600x400/ec4899/ffffff?text=Poetry" alt="エッセイの画像" class="w-full h-60 object-cover transform group-hover:scale-105 transition-transform duration-500 ease-in-out">
                         </div>
@@ -105,7 +123,7 @@
                         <p class="text-gray-600 mt-2">執筆者: 伊藤 さくら (博士課程1年)</p>
                     </a>
                     <!-- Essay Card 6 -->
-<!--                    <a href="#" class="group block">
+                    <a href="#" class="group block">
                         <div class="overflow-hidden rounded-lg">
                             <img src="https://placehold.co/600x400/10b981/ffffff?text=Book+Review" alt="エッセイの画像" class="w-full h-60 object-cover transform group-hover:scale-105 transition-transform duration-500 ease-in-out">
                         </div>
@@ -114,7 +132,7 @@
                         <p class="text-gray-600 mt-2">執筆者: 鵜飼 信光 (教授)</p>
                     </a>
                     <!-- Essay Card 7 -->
-<!--                    <a href="#" class="group block">
+                    <a href="#" class="group block">
                         <div class="overflow-hidden rounded-lg">
                             <img src="https://placehold.co/600x400/3b82f6/ffffff?text=History" alt="エッセイの画像" class="w-full h-60 object-cover transform group-hover:scale-105 transition-transform duration-500 ease-in-out">
                         </div>
@@ -123,7 +141,7 @@
                         <p class="text-gray-600 mt-2">執筆者: Iain Twiddy (准教授)</p>
                     </a>
                     <!-- Essay Card 8 -->
-<!--                    <a href="#" class="group block">
+                    <a href="#" class="group block">
                         <div class="overflow-hidden rounded-lg">
                             <img src="https://placehold.co/600x400/f97316/ffffff?text=Society" alt="エッセイの画像" class="w-full h-60 object-cover transform group-hover:scale-105 transition-transform duration-500 ease-in-out">
                         </div>
@@ -132,7 +150,7 @@
                         <p class="text-gray-600 mt-2">執筆者: 佐藤 健太 (修士課程2年)</p>
                     </a>
                     <!-- Essay Card 9 -->
-<!--                    <a href="#" class="group block">
+                    <a href="#" class="group block">
                         <div class="overflow-hidden rounded-lg">
                             <img src="https://placehold.co/600x400/6b7280/ffffff?text=Film" alt="エッセイの画像" class="w-full h-60 object-cover transform group-hover:scale-105 transition-transform duration-500 ease-in-out">
                         </div>
@@ -140,8 +158,16 @@
                         <h3 class="text-2xl font-bold mt-1 group-hover:text-red-800 transition-colors">フィルム・ノワールとアメリカの影</h3>
                         <p class="text-gray-600 mt-2">執筆者: 高野 泰志 (教授)</p>
                     </a>
+
+*/
+</script>
+
                 </div>
 
+
+
+<script>
+/* エッセイが増えてきたら、コメントアウトした以下のページナビゲーションを復活させる
                 <!-- Pagination -->
                 <nav class="flex items-center justify-center mt-16" aria-label="Pagination">
                     <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
@@ -164,6 +190,9 @@
                         </svg>
                     </a>
                 </nav>
+
+*/
+</script>
 
             </div>
         </section>
