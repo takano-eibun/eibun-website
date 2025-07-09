@@ -98,5 +98,57 @@
         </div>
     </footer>
 
+    <script>
+        // --- モバイルメニューの制御 ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileCloseButton = document.getElementById('mobile-close-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
+
+        const closeMobileMenu = () => {
+            mobileMenu.classList.add('hidden');
+            document.body.style.overflow = '';
+        };
+
+        mobileCloseButton.addEventListener('click', closeMobileMenu);
+        mobileNavLinks.forEach(link => link.addEventListener('click', closeMobileMenu));
+
+
+        // --- スクロールでヘッダーの背景を変更 ---
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('bg-white/80', 'backdrop-blur-sm', 'shadow-md');
+                header.classList.remove('text-white');
+            } else {
+                header.classList.remove('bg-white/80', 'backdrop-blur-sm', 'shadow-md');
+                header.classList.add('text-white');
+            }
+        });
+
+
+        // --- スクロールでの要素表示アニメーション ---
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        revealElements.forEach(el => {
+            observer.observe(el);
+        });
+
+        // 初期状態でヘッダーのテキスト色を白に設定
+        header.classList.add('text-white');
+    </script>
 </body>
 </html>

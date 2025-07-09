@@ -61,6 +61,19 @@
         </div>
     </header>
     
+    <!-- モバイルメニュー -->
+    <div id="mobile-menu" class="hidden md:hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-95 z-40 flex justify-center items-center text-white">
+        <button id="mobile-close-button" class="absolute top-6 right-6 text-2xl">&times;</button>
+        <div class="flex flex-col text-center space-y-8 text-2xl">
+             <a href="#about" class="mobile-nav-link">About</a>
+             <a href="#fields" class="mobile-nav-link">Fields</a>
+             <a href="#essays" class="mobile-nav-link">Essays</a>
+             <a href="#kyuei-kai" class="mobile-nav-link">Kyuei-kai</a>
+             <a href="#faculty" class="mobile-nav-link">Faculty</a>
+             <a href="#theses" class="mobile-nav-link">Academic Theses</a>
+        </div>
+    </div>
+
     <main>
         <section class="py-24 md:py-32">
             <div class="container mx-auto px-6">
@@ -1201,5 +1214,57 @@
         </div>
     </footer>
 
+    <script>
+        // --- モバイルメニューの制御 ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileCloseButton = document.getElementById('mobile-close-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
+
+        const closeMobileMenu = () => {
+            mobileMenu.classList.add('hidden');
+            document.body.style.overflow = '';
+        };
+
+        mobileCloseButton.addEventListener('click', closeMobileMenu);
+        mobileNavLinks.forEach(link => link.addEventListener('click', closeMobileMenu));
+
+
+        // --- スクロールでヘッダーの背景を変更 ---
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('bg-white/80', 'backdrop-blur-sm', 'shadow-md');
+                header.classList.remove('text-white');
+            } else {
+                header.classList.remove('bg-white/80', 'backdrop-blur-sm', 'shadow-md');
+                header.classList.add('text-white');
+            }
+        });
+
+
+        // --- スクロールでの要素表示アニメーション ---
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        revealElements.forEach(el => {
+            observer.observe(el);
+        });
+
+        // 初期状態でヘッダーのテキスト色を白に設定
+        header.classList.add('text-white');
+    </script>
 </body>
 </html>
