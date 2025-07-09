@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>エッセイ & コラム | 九州大学文学部 英語学・英文学研究室</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* カスタムスタイル */
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', 'Noto Sans JP', serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700">
+
+    <!-- ヘッダー -->
+    <header id="header" class="bg-white/80 backdrop-blur-sm shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-wider">
+                <a href="index.html">ENGLISH | KYUSHU UNIV.</a>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#fields" class="nav-link">Fields</a>
+                <a href="index.html#essays" class="nav-link">Essays</a>
+                <a href="index.html#kyuei-kai" class="nav-link">Kyuei-kai</a>
+                <a href="index.html#faculty" class="nav-link">Faculty</a>
+                <a href="index.html#theses" class="nav-link">Academic Theses</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="focus:outline-none">
+                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="py-24 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-2 text-red-800">Essays & Columns</h1>
+                    <p class="text-xl text-gray-500 font-bold">エッセイ & コラム</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+                    <!-- Essay Card 1 -->
+                    <a href="takano-essay1.html" class="group block">
+                        <div class="overflow-hidden rounded-lg">
+                            <img src="https://placehold.co/600x400/94a3b8/ffffff?text=Film" alt="エッセイの画像" class="w-full h-60 object-cover transform group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                        </div>
+                        <p class="text-sm text-gray-500 mt-4">2025.07.06 | 教員コラム</p>
+                        <h3 class="text-2xl font-bold mt-1 group-hover:text-red-800 transition-colors">映画で知るアメリカ文学</h3>
+                        <p class="text-gray-600 mt-2">執筆者: 高野 泰志 (教授)</p>
+                    </a>
+                    <!-- Essay Card 2 -->
+                    <a href="under-construction.html" class="group block">
+                        <div class="overflow-hidden rounded-lg">
+                            <img src="https://placehold.co/600x400/a3a3a3/ffffff?text=Drama" alt="エッセイの画像" class="w-full h-60 object-cover transform group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                        </div>
+                        <p class="text-sm text-gray-500 mt-4">2025.07.06 | 学生エッセイ</p>
+                        <h3 class="text-2xl font-bold mt-1 group-hover:text-red-800 transition-colors">演劇</h3>
+                        <p class="text-gray-600 mt-2">執筆者: 伊瀬知 ひとみ (博士2年)</p>
+                    </a>
+                    <!-- Essay Card 3 -->
+                    <a href="under-construction.html" class="group block">
+                        <div class="overflow-hidden rounded-lg">
+                            <img src="https://placehold.co/600x400/737373/ffffff?text=Study" alt="エッセイの画像" class="w-full h-60 object-cover transform group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                        </div>
+                        <p class="text-sm text-gray-500 mt-4">2025.07.06 | 学生エッセイ</p>
+                        <h3 class="text-2xl font-bold mt-1 group-hover:text-red-800 transition-colors">院生生活</h3>
+                        <p class="text-gray-600 mt-2">執筆者: 未定</p>
+                    </a>
+                    <!-- Essay Card 4 -->
+<!--                    <a href="#" class="group block">
+                        <div class="overflow-hidden rounded-lg">
+                            <img src="https://placehold.co/600x400/8b5cf6/ffffff?text=Culture" alt="エッセイの画像" class="w-full h-60 object-cover transform group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                        </div>
+                        <p class="text-sm text-gray-500 mt-4">2025.06.10 | 卒業生寄稿</p>
+                        <h3 class="text-2xl font-bold mt-1 group-hover:text-red-800 transition-colors">ロンドン留学の思い出</h3>
+                        <p class="text-gray-600 mt-2">執筆者: 高橋 大輔 (2020年卒)</p>
+                    </a>
+                    <!-- Essay Card 5 -->
+<!--                    <a href="#" class="group block">
+                        <div class="overflow-hidden rounded-lg">
+                            <img src="https://placehold.co/600x400/ec4899/ffffff?text=Poetry" alt="エッセイの画像" class="w-full h-60 object-cover transform group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                        </div>
+                        <p class="text-sm text-gray-500 mt-4">2025.06.05 | 学生エッセイ</p>
+                        <h3 class="text-2xl font-bold mt-1 group-hover:text-red-800 transition-colors">ディキンスンの詩と孤独</h3>
+                        <p class="text-gray-600 mt-2">執筆者: 伊藤 さくら (博士課程1年)</p>
+                    </a>
+                    <!-- Essay Card 6 -->
+<!--                    <a href="#" class="group block">
+                        <div class="overflow-hidden rounded-lg">
+                            <img src="https://placehold.co/600x400/10b981/ffffff?text=Book+Review" alt="エッセイの画像" class="w-full h-60 object-cover transform group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                        </div>
+                        <p class="text-sm text-gray-500 mt-4">2025.05.28 | 書評</p>
+                        <h3 class="text-2xl font-bold mt-1 group-hover:text-red-800 transition-colors">書評：『残されたもの』カズオ・イシグロ</h3>
+                        <p class="text-gray-600 mt-2">執筆者: 鵜飼 信光 (教授)</p>
+                    </a>
+                    <!-- Essay Card 7 -->
+<!--                    <a href="#" class="group block">
+                        <div class="overflow-hidden rounded-lg">
+                            <img src="https://placehold.co/600x400/3b82f6/ffffff?text=History" alt="エッセイの画像" class="w-full h-60 object-cover transform group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                        </div>
+                        <p class="text-sm text-gray-500 mt-4">2025.05.22 | 教員コラム</p>
+                        <h3 class="text-2xl font-bold mt-1 group-hover:text-red-800 transition-colors">シェイクスピア時代の劇場</h3>
+                        <p class="text-gray-600 mt-2">執筆者: Iain Twiddy (准教授)</p>
+                    </a>
+                    <!-- Essay Card 8 -->
+<!--                    <a href="#" class="group block">
+                        <div class="overflow-hidden rounded-lg">
+                            <img src="https://placehold.co/600x400/f97316/ffffff?text=Society" alt="エッセイの画像" class="w-full h-60 object-cover transform group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                        </div>
+                        <p class="text-sm text-gray-500 mt-4">2025.05.15 | 学生エッセイ</p>
+                        <h3 class="text-2xl font-bold mt-1 group-hover:text-red-800 transition-colors">ポストコロニアル文学を読むということ</h3>
+                        <p class="text-gray-600 mt-2">執筆者: 佐藤 健太 (修士課程2年)</p>
+                    </a>
+                    <!-- Essay Card 9 -->
+<!--                    <a href="#" class="group block">
+                        <div class="overflow-hidden rounded-lg">
+                            <img src="https://placehold.co/600x400/6b7280/ffffff?text=Film" alt="エッセイの画像" class="w-full h-60 object-cover transform group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                        </div>
+                        <p class="text-sm text-gray-500 mt-4">2025.05.10 | 教員コラム</p>
+                        <h3 class="text-2xl font-bold mt-1 group-hover:text-red-800 transition-colors">フィルム・ノワールとアメリカの影</h3>
+                        <p class="text-gray-600 mt-2">執筆者: 高野 泰志 (教授)</p>
+                    </a>
+                </div>
+
+                <!-- Pagination -->
+                <nav class="flex items-center justify-center mt-16" aria-label="Pagination">
+                    <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                        <span class="sr-only">Previous</span>
+                        <!-- Heroicon name: solid/chevron-left -->
+                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-current="page" class="z-10 bg-red-50 border-red-500 text-red-600 relative inline-flex items-center px-4 py-2 border text-sm font-medium"> 1 </a>
+                    <a href="#" class="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium"> 2 </a>
+                    <a href="#" class="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 hidden md:inline-flex relative items-center px-4 py-2 border text-sm font-medium"> 3 </a>
+                    <span class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700"> ... </span>
+                    <a href="#" class="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 hidden md:inline-flex relative items-center px-4 py-2 border text-sm font-medium"> 8 </a>
+                    <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                        <span class="sr-only">Next</span>
+                        <!-- Heroicon name: solid/chevron-right -->
+                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </nav>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-gray-900 text-gray-400">
+        <div class="container mx-auto px-6 py-12 text-center">
+            <p class="text-lg font-bold text-white mb-2">九州大学文学部 英語学・英文学研究室</p>
+            <p>〒819-0395 福岡市西区元岡744</p>
+            <div class="mt-8">
+                <a href="https://www.kyushu-u.ac.jp/" target="_blank" rel="noopener noreferrer" class="hover:text-white mx-4">九州大学</a>
+                <a href="https://www.lit.kyushu-u.ac.jp/" target="_blank" rel="noopener noreferrer" class="hover:text-white mx-4">九州大学文学部</a>
+            </div>
+            <p class="mt-8 text-sm text-gray-500">&copy; 2025 Department of English, Kyushu University. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
