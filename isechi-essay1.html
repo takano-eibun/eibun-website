@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生コラム：2024年マイベスト5（前半） | 九州大学文学部 英語学・英文学研究室</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* カスタムスタイル */
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', 'Noto Sans JP', serif;
+        }
+        
+        .nav-link {
+            position: relative;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #991b1b; /* red-800 */
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+        
+        .nav-link:hover {
+             color: #991b1b; /* red-800 */
+        }
+
+        .nav-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        /* Article content styling */
+        .article-content h3 {
+            font-size: 1.875rem; /* text-3xl */
+            font-weight: 700; /* bold */
+            margin-top: 2.5rem; /* mt-10 */
+            margin-bottom: 1rem; /* mb-4 */
+            padding-bottom: 0.5rem; /* pb-2 */
+            border-bottom: 2px solid #fecaca; /* border-red-200 */
+            color: #991b1b; /* text-red-800 */
+        }
+        .article-content p {
+            line-height: 1.75; /* leading-relaxed */
+            margin-bottom: 1rem; /* mb-4 */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700">
+
+    <!-- ヘッダー -->
+    <header id="header" class="bg-white/95 backdrop-blur-sm shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-wider"><a href="index.html">ENGLISH | KYUSHU UNIV.</a></div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#fields" class="nav-link">Fields</a>
+                <a href="index.html#essays" class="nav-link">Essays</a>
+                <a href="kyuei-kai.html" class="nav-link">Kyuei-kai</a>
+                <a href="index.html#faculty" class="nav-link">Faculty</a>
+                <a href="index.html#admissions" class="nav-link">Admissions</a>
+            </nav>
+            <div class="md:hidden"><button id="mobile-menu-button" class="focus:outline-none"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div>
+        </div>
+    </header>
+
+    <!-- モバイルメニュー -->
+    <div id="mobile-menu" class="hidden md:hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-95 z-50 flex justify-center items-center text-white">
+        <button id="mobile-close-button" class="absolute top-6 right-6 text-3xl">&times;</button>
+        <div class="flex flex-col text-center space-y-8 text-2xl">
+             <a href="index.html#about" class="mobile-nav-link">About</a>
+             <a href="index.html#fields" class="mobile-nav-link">Fields</a>
+             <a href="index.html#essays" class="mobile-nav-link">Essays</a>
+             <a href="kyuei-kai.html" class="mobile-nav-link">Kyuei-kai</a>
+             <a href="index.html#faculty" class="mobile-nav-link">Faculty</a>
+             <a href="index.html#admissions" class="mobile-nav-link">Admissions</a>
+        </div>
+    </div>
+    
+    <main>
+        <section class="py-24 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="max-w-3xl mx-auto">
+                    <div class="text-center mb-12">
+                        <p class="text-red-800 font-semibold">学生コラム</p>
+                        <h1 class="text-4xl md:text-5xl font-bold mt-2">2024年マイベスト5（前半）</h1>
+                        <p class="text-gray-500 mt-4">2025年7月19日</p>
+                    </div>
+
+                    <div class="bg-white p-8 sm:p-12 rounded-lg border border-gray-200 article-content">
+                        <div class="bg-gray-50 p-6 rounded-lg mb-10 border-l-4 border-red-300">
+                            <h2 class="text-2xl font-bold mb-2">After the Curtain Call</h2>
+                            <p class="text-gray-600">このコラムは、「生まれ変わったらミュージカル俳優になりたい」といつも言っているほどお芝居大好きな学生が、ほとばしるお芝居への情熱を伝えるためにつらつらと書いています。もちろん作品紹介には個人的な好みが入っていますし、一地方都市に住んでいる貧乏学生が観劇できる作品数はそれほど多くはないですが、お芝居の楽しさを少しでも感じていただけると嬉しいです。そして「もっとこの作品について知りたい」と思ったそこのあなた！ぜひ当研究室で一緒に学んでみましょう。</p>
+                        </div>
+
+                        <p>今回は（もうすでに今年も半分を過ぎていますが）昨年観劇した約30作品の中から、「2024年マイベスト5」ということで特に印象に残った作品を紹介したいと思います。</p>
+                        
+                        <h3>第5位：『六月博多座大歌舞伎 夜の部』</h3>
+                        <p>作品は『通し狂言 東海道四谷怪談』、そう、あのお岩さんが出てくる怪談話です。お岩を尾上右近、そのお岩を裏切る民谷伊右衛門を尾上松也が演じています。何と言っても右近の女形の美しさがたまりません。右近の演技からは、立役も女形も舞踊も全部やってやるぜ！という気概をいつも感じます（ちなみに右近のミュージカル作品での演技もおすすめです）。声の高さや手足の動かし方、目線の配り方など、女形特有の体の使い方は要注目です。また、松也の伊右衛門には、己の欲のために女性を裏切る男性の嫌らしさが十分に出ています（注：褒めています）。私は歌舞伎俳優としての松也よりもミュージカル俳優としての松也を先に観たのですが（『スリル・ミー』での演技には身悶えしちゃいます）、どちらの松也も声質がたまらないです。目をつぶって声だけ聴いても、演じている役柄の人間性をしっかりと感じることができます。もちろん芝居鑑賞ですので、観客は目で俳優の演技や舞台美術をしっかり堪能するのがマストですが、松也は声だけでも作品の世界観を伝えられているのではないでしょうか。松也が出演しているAudibleがあれば課金しちゃいそう…。</p>
+                        <p>ところで、『四谷怪談』では伊右衛門の策略でお岩の顔が醜くなっていく、というあらすじは多くの人がご存じだと思います。個人的には、この後のお岩の亡霊が次々と仇討ちをする場面も見ごたえ充分です。私が観劇した回では、お岩の仇討ちのあまりの恐ろしさに、数名の観客が本物の悲鳴を上げていました。通常、演劇鑑賞では客席から笑い声が上がることはあっても悲鳴が上がることはほぼないので、それを考えると、お岩の怨嗟の深さがしっかりと表現されていた、と言っていいでしょう。</p>
+
+                        <h3>第4位：『海をゆく者』</h3>
+                        <p>コナー・マクファーソン作、栗山民也演出による、アイルランドの海沿いの街に住む飲んだくれおやじたちのブラックコメディです。2023年12月から始まった再再演では、小日向文世、浅野和之、大谷亮介、平田満、高橋克実の5人が集結しました。いずれも実力派の彼らが、中年男性の哀愁や、飲んだくれおやじの無様だけど何とか這いつくばって日々を生きる様子を、これでもかと表現してくれています。飲んだくれたちが主人公ですから、家の中はしっちゃかめっちゃか、髪はぼさぼさ、服なんてとりあえずそこらへんに散らばっていたもの着てみました、みたいな状態です。高橋演じるリチャードに至っては、物語の冒頭からズボンが脱げてトランクス（しかも中年オヤジが選びそうなダサい色）が丸見えです。小日向演じるロックハートだけは紳士然とした身なりなのも、話の展開上で後々効いてきます。ふつうはこんな飲んだくれたちを演じようとしたらオーバーな演技になりそうなところを、いずれも舞台出身の5人衆が絶妙なバランスで演じています。この作品は渋いテーマ&渋い俳優陣で、客席の年齢層は高め（しかもお芝居好きの匂いがぷんぷんします）、よって観客の芝居を観る目は「さぁ今からどんな芝居を見せてくれるんだい」とでも言いだしそうな、とても肥えているような印象を受けましたが、5人の俳優たちが見事に観客の期待に応えられていると感じました。私も登場人物たちの酔っぱらいぶりを見てげらげら笑いながらも、ふと「私の父もいつかはあんな風になるのかなぁ…」と思ってしまうほどでした。</p>
+                        <p>以前何かの本で「芝居はリアリズムとは相容れない。演じるという行為が発生した瞬間、そこには何かしらの作為的な要素が入り込むから」みたいなことを読んだ記憶があるのですが、この作品は私たちの日々の暮らしの中のリアリティを見事に示してくれています。それはきっと、脚本家、演出家、俳優、舞台スタッフといったこの作品に関わる全ての人々の、演劇業界での途方もない経験に裏打ちされた円熟味と、芝居への深い深い愛情が見事にかけ合わさっているからなのでしょう。お芝居の神様が降臨した、とでも言えるような、いつまでも瞼の奥に焼き付けておきたい作品です。</p>
+
+                        <h3>第3位：『オーランド』</h3>
+                        <p>原作はイギリスの20世紀モダニズムを代表する作家ヴァージニア・ウルフの同名小説、翻案は岩切正一郎、演出は栗山民也、主演は宮沢りえ、まさに演劇ファン垂涎の組み合わせです。この作品は、イギリスのエリザベス朝の時代に貴族の息子として生まれたオーランドが、300年以上の時を生き、その間にいつのまにか自身の知らぬうちに性転換も果たし、各時代で様々なことを経験し…（※かなり大雑把にあらすじをまとめていますので、少しでも気になった方はぜひ原作を読んでみることをお勧めします）。そう聞くと、ファンタジー色の強いお話なのかな、と思いそうですよね。ところが単なるファンタジー作品ではありません。今回の上演では、カンパニー全体が、原作で描かれているジェンダーや階級格差、アイデンティティの問題はもちろんのこと、平和、戦争、自由といった現代社会にも共通する問題に深く切り込んでいる印象を受けました。お芝居のラストシーンも、原作にあるような、オーランドが旅に出ていた夫を迎えるハッピーエンドとは全く異なっています。今回の演出での公演が始まったのが2024年の6月であることを考えると、栗山はおそらくウクライナ戦争を強く意識したからあのような演出をしているはずです。また、「翻案」とあるように、この他にも原作にはない場面が多々あります。ウエンツ瑛士が下着一枚で演じる骸骨役はその一例です。オーランドの性転換に関しても、原作では裸のオーランドが鏡に映る自分の姿を見て自分が女性になったことに気づくのですが、さすがに舞台の上に裸の俳優を登場させるわけにはいきませんから、今回の演出では鏡と宮沢の後ろ姿を巧みに使った演出がされていました。思わず「なるほど」と唸ってしまうような工夫でした。先ほど少しだけ触れたラストシーンも、翻案の成功例と言ってよいでしょう。書くこと、書物の存在意義、女性性と男性性、戦争、命の尊さと儚さの表裏一体感…。こう並べるとかなりボリューム過多に感じてしまうテーマを、ラストの場面は一瞬で（しかも強烈に）観客に伝えています。文学作品を映画化や舞台化するときには、必ずと言っていいほど、どこまで翻案を許していいのかという問題がつきまといます。今回の演出はかなり振り切ってはいるものの、その大胆さに賭けて見事に成功した例だと思いました。そういえば第3位の作品も栗山演出ですね。栗山は今年で御年72歳ですが、演出家としてまだまだ精力的に活躍してくれそうです。</p>
+                        
+                        <p>おっと、長くなってしまいましたので、残りの第2位と第1位はまた次回。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-gray-900 text-gray-400">
+        <div class="container mx-auto px-6 py-12 text-center">
+            <p class="text-lg font-bold text-white mb-2">九州大学文学部 英語学・英文学研究室</p>
+            <p>〒819-0395 福岡市西区元岡744</p>
+            <div class="mt-8">
+                <a href="https://www.kyushu-u.ac.jp/" target="_blank" rel="noopener noreferrer" class="hover:text-white mx-4">九州大学</a>
+                <a href="https://www.lit.kyushu-u.ac.jp/" target="_blank" rel="noopener noreferrer" class="hover:text-white mx-4">九州大学文学部</a>
+            </div>
+            <p class="mt-8 text-sm text-gray-500">&copy; 2025 Department of English, Kyushu University. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileCloseButton = document.getElementById('mobile-close-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+        mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.remove('hidden'); document.body.style.overflow = 'hidden'; });
+        const closeMobileMenu = () => { mobileMenu.classList.add('hidden'); document.body.style.overflow = ''; };
+        mobileCloseButton.addEventListener('click', closeMobileMenu);
+        mobileNavLinks.forEach(link => link.addEventListener('click', closeMobileMenu));
+    </script>
+
+</body>
+</html>
