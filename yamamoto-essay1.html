@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生コラム：研究室の雰囲気について | 九州大学文学部 英語学・英文学研究室</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* カスタムスタイル */
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', 'Noto Sans JP', serif;
+        }
+        
+        .nav-link {
+            position: relative;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #991b1b; /* red-800 */
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+        
+        .nav-link:hover {
+             color: #991b1b; /* red-800 */
+        }
+
+        .nav-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        /* Article content styling */
+        .article-content h3 {
+            font-size: 1.875rem; /* text-3xl */
+            font-weight: 700; /* bold */
+            margin-top: 2.5rem; /* mt-10 */
+            margin-bottom: 1rem; /* mb-4 */
+            padding-bottom: 0.5rem; /* pb-2 */
+            border-bottom: 2px solid #fecaca; /* border-red-200 */
+            color: #991b1b; /* text-red-800 */
+        }
+        .article-content p {
+            line-height: 1.75; /* leading-relaxed */
+            margin-bottom: 1rem; /* mb-4 */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700">
+
+    <!-- ヘッダー -->
+    <header id="header" class="bg-white/95 backdrop-blur-sm shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-wider"><a href="index.html">ENGLISH | KYUSHU UNIV.</a></div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#fields" class="nav-link">Fields</a>
+                <a href="index.html#essays" class="nav-link">Essays</a>
+                <a href="kyuei-kai.html" class="nav-link">Kyuei-kai</a>
+                <a href="index.html#faculty" class="nav-link">Faculty</a>
+                <a href="index.html#theses" class="nav-link">Academic Theses</a>
+            </nav>
+            <div class="md:hidden"><button id="mobile-menu-button" class="focus:outline-none"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div>
+        </div>
+    </header>
+
+    <!-- モバイルメニュー -->
+    <div id="mobile-menu" class="hidden md:hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-95 z-50 flex justify-center items-center text-white">
+        <button id="mobile-close-button" class="absolute top-6 right-6 text-3xl">&times;</button>
+        <div class="flex flex-col text-center space-y-8 text-2xl">
+             <a href="index.html#about" class="mobile-nav-link">About</a>
+             <a href="index.html#fields" class="mobile-nav-link">Fields</a>
+             <a href="essays.html" class="mobile-nav-link">Essays</a>
+             <a href="kyuei-kai.html" class="mobile-nav-link">Kyuei-kai</a>
+             <a href="index.html#faculty" class="mobile-nav-link">Faculty</a>
+             <a href="index.html#theses" class="mobile-nav-link">Academic Theses</a>
+        </div>
+    </div>
+    
+    <main>
+        <section class="py-24 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="max-w-3xl mx-auto">
+                    <div class="text-center mb-12">
+                        <p class="text-red-800 font-semibold">学生コラム</p>
+                        <h1 class="text-4xl md:text-5xl font-bold mt-2">研究室の雰囲気について</h1>
+                        <p class="text-gray-500 mt-4">2025年7月19日 | 執筆者: 山本 天斗 (博士課程2年)</p>
+                    </div>
+
+                    <div class="bg-white p-8 sm:p-12 rounded-lg border border-gray-200 article-content">
+                        <p>九州大学英語学・英文学研究室は、名前の通り「英語学」と「英文学（アメリカ文学・イギリス文学）」という異なる研究分野が合わさってできている研究室です。ここでは細かな学問の話には触れませんが、どちらも英語を通じて学問を深めるという点で、英語力を培う場になることは間違いないかと思います。とはいっても、必ずしも英語が得意な人が入る研究室というわけではなく、僕自身、英語は苦手だったのですが、なんとなく就職に役立ちそうという理由でこの研究室を選びました。その後なんだかんだありまして、今では博士課程にまで進学することになったのですが、そんな僕から見た研究室の雰囲気を記していきたいと思います。</p>
+
+                        <p>第一に、この研究室では先生方と学生/先輩と後輩の距離感は近い方だと思います。いろんな先生がいらっしゃいますが、なんといっても先生方が（小さい）お子さんを連れて飲み会に参加するくらい安全・安心（?）な研究室です。もちろんそれだけでなく、穏やかな先生や明るい先生方もいらしゃいます。どなたも、非常に親しみやすく、相談もしやすい先生方なので、研究や授業で困ったときもきっと助けになってくれると思います。また、先輩と後輩の距離感も同様だと思います。同じ研究室の学生は同じ授業を受けるというのはもちろんですが、授業によっては勉強会を研究室で行ったり、あるいは研究室行事を一緒に行ったりというのを通じて、学部生・院生間の交流もあります。僕の個人的な話で言えば、同じ院生や卒業生の先輩方と、旅行や飲み会、パフェを食べに行く会を行うなど、研究とは無関係に遊ぶことはしばしばあります。何が言いたいかというと、研究室メンバー同士の仲はよい（あるいは、よくなりやすい）と思う、ということです。</p>
+
+                        <p>次に、学習環境について触れておきます。これは院生の方が関係することかもしれませんが、研究や学習は基本的に自分がどれだけやるか次第だと思います。聞いた話では、コアタイムがある研究室もあるそうで、決められた時間研究室で過ごし研究に従事しなければならないようなのですが、そうしたものはこの研究室にはありません。これまた、人によって良し悪しが変わる部分だとは思いますが、時間を比較的自由に使える環境であることは間違いないと思います。また、学部生対象の英語学の授業では、毎学期期末試験の前に勉強会が行われていて、テスト対策もバッチリ対応できているのではないでしょうか。</p>
+
+                        <p>時代も変わっていっているので、ここで書いた雰囲気がどのように変化していくかは分かりませんが、研究室生活7年目を迎える僕にとっては、この研究室はとても楽しくて過ごしやすい環境だと感じています。また、大学院生としてここまで研究を続けられているのも、先輩方や先生方が支えてくれているからです。ただ楽しいだけでなく、研究・勉学の環境としても素晴らしい研究室だと思いますので、興味のある方はぜひお越しください。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-gray-900 text-gray-400">
+        <div class="container mx-auto px-6 py-12 text-center">
+            <p class="text-lg font-bold text-white mb-2">九州大学文学部 英語学・英文学研究室</p>
+            <p>〒819-0395 福岡市西区元岡744</p>
+            <div class="mt-8">
+                <a href="https://www.kyushu-u.ac.jp/" target="_blank" rel="noopener noreferrer" class="hover:text-white mx-4">九州大学</a>
+                <a href="https://www.lit.kyushu-u.ac.jp/" target="_blank" rel="noopener noreferrer" class="hover:text-white mx-4">九州大学文学部</a>
+            </div>
+            <p class="mt-8 text-sm text-gray-500">&copy; 2025 Department of English, Kyushu University. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileCloseButton = document.getElementById('mobile-close-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+        mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.remove('hidden'); document.body.style.overflow = 'hidden'; });
+        const closeMobileMenu = () => { mobileMenu.classList.add('hidden'); document.body.style.overflow = ''; };
+        mobileCloseButton.addEventListener('click', closeMobileMenu);
+        mobileNavLinks.forEach(link => link.addEventListener('click', closeMobileMenu));
+    </script>
+
+</body>
+</html>
